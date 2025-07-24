@@ -11,6 +11,7 @@ for (const s of series) {
   articles = articles.concat(arts.filter(a => (a.tags||[]).includes(tag)));
 }
 articles.sort((a, b) => b.date.localeCompare(a.date));
+export const prerender = false;
 ---
 <BaseLayout title={`Artículos sobre ${tag}`} description={`Todos los artículos etiquetados con ${tag}.`}>
   <h1>Artículos etiquetados: {tag}</h1>
