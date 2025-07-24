@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "astro": "^5.12.3",
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "@astrojs/netlify": "^4.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.3.0",
