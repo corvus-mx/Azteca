@@ -4,6 +4,8 @@ import Footer from "../components/Footer.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import { getSeo } from "../utils/seo.ts";
 import "../styles/global.css";
+import "../styles/variables.css";
+
 const { title, description, ogImage, url } = Astro.props;
 const seo = getSeo({ title, description, ogImage, url });
 ---
