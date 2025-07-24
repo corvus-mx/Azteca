@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ArticleCard from "../../../components/ArticleCard.astro";
+
+// Parámetro dinámico
+const { seriesname } = Astro.params;
+
+// Carga todos los artículos una sola vez
+const allPosts = import.meta.glob('../../../pages/series/*/*.md', { eager: true });
+
+// Filtra los artículos de la serie actual
+const articles = Object.entries(allPosts)
+  .filter(([path]) => path.includes(`/series/${seriesname}/`))
+  .map(([path, mod]) => {
+    const { frontmatter } = mod as any;
+    const slug = path.split('/').pop()?.replace('.md', '');
+    return {
+      ...frontmatter,
+      url: `/series/${seriesname}/${slug}`
+    };
+  });
+
+// Exporta rutas estáticas para todas las series (carpetas)
+export function getStaticPaths() {
+  const postFiles = import.meta.glob('../../../pages/series/*/*.md', { eager: true });
+
+  const slugs = Object.keys(postFiles).map((filePath) => {
+    const parts = filePath.split('/');
+    const slug = parts[parts.indexOf('series') + 1];
+    return slug;
+  });
+
+  const unique = Array.from(new Set(slugs));
+  console.log("✅ series generadas:", unique);
+
+  return unique.map((slug) => ({ params: { seriesname: slug } }));
+}
+
+---
+
+<BaseLayout title={seriesname}>
+  <section class="grid">
+    {articles.map((article) => (
+      <ArticleCard {...article} />
+    ))}
+  </section>
+</BaseLayout>
+

@@ -1,0 +1,122 @@
+:root {
+  /* Colores base sobrios */
+  --color-bg: #ffffff;
+  --color-fg: #1a1a1a;
+  --color-accent: #0a3d62; /* Azul marino profundo */
+  --color-accent-hover: #052c49;
+  --color-secondary: #34495e;
+  --color-neutral: #6c757d;
+  --color-card: #f8f9fa;
+  --color-border: #ced4da;
+  --color-hero-bg: #f1f3f5;
+  --color-danger: #b02a37;
+  --color-warning: #a65e00;
+  --color-success: #1e7e34;
+
+  /* Texto */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #495057;
+  --color-text-tertiary: #868e96;
+  --color-text-inverse: #ffffff;
+
+  /* Fondos */
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #f1f3f5;
+  --color-surface-tertiary: #e9ecef;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+
+  /* Sombras suaves */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.2);
+
+  /* Tipografía formal */
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Espaciado */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Bordes */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  /* Transiciones */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s ease-in-out;
+  --transition-slow: 0.4s ease-in-out;
+}
+
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-fg: #e0e0e0;
+  --color-accent: #2c82c9;
+  --color-accent-hover: #1b5a91;
+  --color-secondary: #6c757d;
+  --color-neutral: #adb5bd;
+  --color-card: #1e1e1e;
+  --color-border: #33393f;
+  --color-hero-bg: #1a1a1a;
+  --color-danger: #ff6b6b;
+  --color-warning: #ffa94d;
+  --color-success: #51cf66;
+
+  --color-text-primary: #e9ecef;
+  --color-text-secondary: #ced4da;
+  --color-text-tertiary: #adb5bd;
+  --color-text-inverse: #121212;
+
+  --color-surface-primary: #1e1e1e;
+  --color-surface-secondary: #2a2a2a;
+  --color-surface-tertiary: #333;
+  --color-overlay: rgba(0, 0, 0, 0.85);
+
+  --shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.05);
+  --shadow-md: 0 4px 12px rgba(255, 255, 255, 0.07);
+  --shadow-lg: 0 8px 24px rgba(255, 255, 255, 0.1);
+  --shadow-xl: 0 16px 48px rgba(255, 255, 255, 0.12);
+}
+
+/* Preferencia del sistema */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #121212;
+    --color-fg: #e0e0e0;
+    --color-accent: #2c82c9;
+    --color-accent-hover: #1b5a91;
+    --color-secondary: #6c757d;
+    --color-neutral: #adb5bd;
+    --color-card: #1e1e1e;
+    --color-border: #33393f;
+    --color-hero-bg: #1a1a1a;
+    --color-danger: #ff6b6b;
+    --color-warning: #ffa94d;
+    --color-success: #51cf66;
+
+    --color-text-primary: #e9ecef;
+    --color-text-secondary: #ced4da;
+    --color-text-tertiary: #adb5bd;
+    --color-text-inverse: #121212;
+
+    --color-surface-primary: #1e1e1e;
+    --color-surface-secondary: #2a2a2a;
+    --color-surface-tertiary: #333;
+    --color-overlay: rgba(0, 0, 0, 0.85);
+
+    --shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.05);
+    --shadow-md: 0 4px 12px rgba(255, 255, 255, 0.07);
+    --shadow-lg: 0 8px 24px rgba(255, 255, 255, 0.1);
+    --shadow-xl: 0 16px 48px rgba(255, 255, 255, 0.12);
+  }
+}
+
