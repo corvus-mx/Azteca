@@ -4,9 +4,9 @@ date: "2025-07-24"
 summary: "AztecHorse es un acto de resistencia desde el anonimato. En este artículo fundacional explicamos por qué nace este medio, qué vamos a investigar y cómo puedes participar."
 tags: ["bienvenida", "libertad de prensa", "periodismo independiente", "gentrificación", "crimen organizado", "feminicidios"]
 cover: "/series/NaceAztecHorse/images/portada.jpg"
-image1: "/series/NaceAztecHorse/images/mapa-desplazamiento.jpg"
-image2: "/series/NaceAztecHorse/images/tren-maya-selva.jpg"
-series: "introduccion"
+image1: "/series/NaceAztecHorse/images/mapa-desplazamiento.png"
+image2: "/series/NaceAztecHorse/images/tren-maya-selva.png"
+series: "aceAztecHorse"
 layout: ../../../layouts/ArticleLayout.astro
 ---
 
@@ -25,21 +25,24 @@ Este medio, por eso, no tiene redacción física. Funciona en red. Se aloja en s
 
 ## ¿Qué vamos a investigar?
 
-### 1. Gentrificación, desplazamiento y despojo
+#### 1.Gentrificación, desplazamiento y despojo
 
 La gentrificación no es solo una cuestión de renta elevada. Es violencia económica. En Tulum y Playa del Carmen, miles de familias han sido desplazadas por el alza del costo de vida. El **INEGI** indica que entre 2015 y 2023, **la renta promedio en zonas costeras aumentó más del 300%**, expulsando a comunidades originarias y trabajadores locales.
+
+![Tren Maya en zonas naturales protegidas](/series/NaceAztecHorse/images/tren-maya-selva.png)
+
 
 El **Tren Maya**, por su parte, ha generado el **desplazamiento directo de más de 6,500 personas**, muchas sin consulta indígena previa, violando el Convenio 169 de la OIT. Más de **100 sitios arqueológicos** y zonas naturales protegidas han sido afectadas o destruidas.
 
 ![Mapa de desplazamiento y destrucción](/series/NaceAztecHorse/images/mapa-desplazamiento.png)
 
-### 2. Crimen organizado con protección institucional
+#### 2.Crimen organizado con protección institucional
 
 En Cancún, Playa del Carmen y Tulum operan activamente cinco grupos criminales: **CJNG, Cártel de Sinaloa, Cártel del Golfo, Cártel del Noreste y Los Pelones**. De acuerdo con informes del *Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública*, entre 2023 y 2025 se registraron **más de 890 homicidios dolosos** en la zona norte del estado, muchos con signos de ejecución.
 
 Las balaceras en zonas turísticas —como el tiroteo en la playa de Xcaret (2022) o el ataque en el bar "La Malquerida" (2023)— confirman que la violencia no está contenida. Y lo más grave: **en múltiples casos se ha vinculado a policías municipales, agentes ministeriales y funcionarios locales como cómplices o facilitadores**.
 
-### 3. Feminicidios, trata y desapariciones
+#### 3.Feminicidios, trata y desapariciones
 
 Quintana Roo ocupa los primeros lugares a nivel nacional en feminicidios por cada 100 mil habitantes. En 2024 se documentaron:
 
@@ -49,7 +52,7 @@ Quintana Roo ocupa los primeros lugares a nivel nacional en feminicidios por cad
 
 Según datos oficiales, **el 32% de las mujeres asesinadas había denunciado previamente violencia doméstica o acoso**, sin recibir protección efectiva. Cada caso es una muestra de un sistema que falla sistemáticamente a las víctimas.
 
-### 4. Censura estructural
+#### 4.Censura estructural
 
 En Quintana Roo, la mayoría de los grandes medios dependen de convenios de publicidad con los gobiernos locales. Esto ha generado una **autocensura estructural**, especialmente en temas como corrupción, crimen organizado o megaproyectos. Periodistas que se atreven a denunciar son despedidos, amenazados o silenciados.
 
@@ -77,7 +80,6 @@ Si has sido víctima o testigo de:
 
 Tu testimonio puede cambiar una historia. Puede abrir una investigación.
 
-![Tren Maya en zonas naturales protegidas](/series/NaceAztecHorse/images/tren-maya-selva.png)
 
 ## Próximas investigaciones
 
