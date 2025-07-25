@@ -2,9 +2,9 @@
   /* Colores claros por defecto */
   --color-bg: #ffffff;
   --color-fg: #1a1a1a;
-  --color-accent: #0a3d62;
-  --color-accent-hover: #052c49;
-  --color-secondary: #34495e;
+  --color-accent: #7c7f85;          /* Plata neutro */
+  --color-accent-hover: #5e6269;    /* Gris más oscuro */
+  --color-secondary: #495057;
   --color-neutral: #6c757d;
   --color-card: #f8f9fa;
   --color-border: #ced4da;
@@ -29,8 +29,8 @@
   :root {
     --color-bg: #121212;
     --color-fg: #e0e0e0;
-    --color-accent: #2c82c9;
-    --color-accent-hover: #1b5a91;
+    --color-accent: #b0b3b8;        /* Plata claro */
+    --color-accent-hover: #9a9ea5;  /* Gris medio */
     --color-secondary: #6c757d;
     --color-neutral: #adb5bd;
     --color-card: #1e1e1e;
