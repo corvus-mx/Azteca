@@ -129,36 +129,37 @@ const { title, subtitle } = Astro.props;
   }
 
   /* Responsive */
-  @media (max-width: 768px) {
-    .hero-container {
-      grid-template-columns: 1fr;
-      gap: var(--space-xl);
-      padding: var(--space-xl) var(--space-md);
-      text-align: center;
-    }
-
-    .hero-actions {
-      justify-content: center;
-    }
-
-    .hero-visual {
-      order: -1;
-    }
-
-    .hero-badge {
-      flex-direction: column;
-      padding: var(--space-md);
-      transform: rotate(0deg);
-    }
-
-    .badge-image {
-      width: 48px;
-    }
-
-    .badge-text {
-      font-size: 0.9rem;
-    }
+ @media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    padding: var(--space-xl) var(--space-md);
+    text-align: center;
   }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero-badge {
+    flex-direction: column;
+    padding: var(--space-md);
+    transform: rotate(0deg);
+  }
+
+  .badge-image {
+    width: 48px;
+  }
+
+  .badge-text {
+    font-size: 0.9rem;
+  }
+}
+
 
   @media (max-width: 480px) {
     .hero-actions {
