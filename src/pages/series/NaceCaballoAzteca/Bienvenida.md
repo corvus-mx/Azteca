@@ -3,9 +3,11 @@ title: "¿De dónde nace Caballo Azteca?"
 date: "2025-07-24"
 summary: "Caballo Azteca es un acto de resistencia desde el anonimato. En este artículo fundacional explicamos por qué nace este medio, qué vamos a investigar y cómo puedes participar."
 tags: ["bienvenida", "libertad de prensa", "periodismo independiente", "gentrificación", "crimen organizado", "feminicidios"]
-cover: "/series/NaceAztecHorse/images/portada.jpg"
-image1: "/series/NaceAztecHorse/images/mapa-desplazamiento.png"
-image2: "/series/NaceAztecHorse/images/tren-maya-selva.png"
+cover: "/series/NaceAztecHorse/images/aztech.png"
+image1: "/series/NaceAztecHorse/images/tren-maya-selva.png"
+image2: "/series/NaceAztecHorse/images/crimenorg.png"
+image3: "/series/NaceAztecHorse/images/femin.png"
+image4: "/series/NaceAztecHorse/images/corrupcion.png"
 series: "NaceCaballoAzteca"
 layout: ../../../layouts/ArticleLayout.astro
 ---
