@@ -6,7 +6,7 @@ import ArticleCard from "../../../components/ArticleCard.astro";
 const { seriesname } = Astro.params;
 
 // Carga todos los artículos una sola vez
-const allPosts = import.meta.glob('../../../pages/series/*/*.md', { eager: true });
+const allPosts = import.meta.glob('@/pages/series/*/*.md', { eager: true });
 
 // Filtra los artículos de la serie actual
 const articles = Object.entries(allPosts)
@@ -22,7 +22,7 @@ const articles = Object.entries(allPosts)
 
 // Exporta rutas estáticas para todas las series (carpetas)
 export function getStaticPaths() {
-  const postFiles = import.meta.glob('../../../pages/series/*/*.md', { eager: true });
+  const postFiles = import.meta.glob('@/pages/series/*/*.md', { eager: true });
 
   const slugs = Object.keys(postFiles).map((filePath) => {
     const parts = filePath.split('/');
