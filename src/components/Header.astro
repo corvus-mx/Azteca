@@ -11,7 +11,7 @@ const nav = [
     <div class="header-brand">
       <a href="/" class="brand-link">
         <span class="brand-text">AztecHorse</span>
-        <span class="brand-subtitle">Periodismo de Investigación Independiente</span>
+        <span class="brand-subtitle">Periodismo Independiente</span>
       </a>
     </div>
 
@@ -27,16 +27,6 @@ const nav = [
         <a href={item.href} class="nav-link">{item.label}</a>
       ))}
     </nav>
-<!--
-    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
-      <svg class="theme-icon theme-icon--light" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
-      </svg>
-      <svg class="theme-icon theme-icon--dark" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"/>
-      </svg>
-    </button>
--->
   </div>
 </header>
 
@@ -158,52 +148,6 @@ const nav = [
     border-radius: 1px;
   }
 
-  .theme-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--color-surface-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .theme-toggle:hover {
-    background: var(--color-surface-tertiary);
-    transform: scale(1.05);
-  }
-
-  .theme-icon {
-    position: absolute;
-    transition: all var(--transition-normal);
-    color: var(--color-text-secondary);
-  }
-
-  .theme-icon--light {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-
-  .theme-icon--dark {
-    opacity: 0;
-    transform: rotate(180deg);
-  }
-
-  [data-theme="dark"] .theme-icon--light {
-    opacity: 0;
-    transform: rotate(180deg);
-  }
-
-  [data-theme="dark"] .theme-icon--dark {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-
   /* Responsive */
   @media (max-width: 768px) {
     .menu-toggle {
@@ -211,45 +155,30 @@ const nav = [
     }
 
     .header-nav {
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 0;
       right: 0;
-      width: 200px;
-      flex-direction: column;
+      height: 100vh;
+      width: 240px;
       background: var(--color-surface-primary);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: var(--space-md);
-      gap: var(--space-md);
-      transform: translateY(-20px);
-      opacity: 0;
-      pointer-events: none;
+      flex-direction: column;
+      align-items: start;
+      padding: var(--space-2xl) var(--space-xl);
+      border-left: 1px solid var(--color-border);
+      transform: translateX(100%);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      box-shadow: var(--shadow-lg);
     }
 
     .header-nav.is-open {
-      transform: translateY(0);
-      opacity: 1;
-      pointer-events: auto;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .header-container {
-      padding: var(--space-md);
-      gap: var(--space-md);
+      transform: translateX(0);
     }
 
     .nav-link {
-      font-size: 0.9rem;
-      padding: var(--space-xs) var(--space-sm);
-    }
-
-    .brand-text {
-      font-size: 1.35rem;
-    }
-
-    .brand-subtitle {
-      font-size: 0.7rem;
+      font-size: 1rem;
+      width: 100%;
+      text-align: left;
+      padding: var(--space-sm) 0;
     }
   }
 </style>
