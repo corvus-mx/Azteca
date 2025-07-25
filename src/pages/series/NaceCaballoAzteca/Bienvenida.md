@@ -1,20 +1,20 @@
 ---
-title: "¿De dónde nace AztecHorse?"
+title: "¿De dónde nace Caballo Azteca?"
 date: "2025-07-24"
-summary: "AztecHorse es un acto de resistencia desde el anonimato. En este artículo fundacional explicamos por qué nace este medio, qué vamos a investigar y cómo puedes participar."
+summary: "Caballo Azteca es un acto de resistencia desde el anonimato. En este artículo fundacional explicamos por qué nace este medio, qué vamos a investigar y cómo puedes participar."
 tags: ["bienvenida", "libertad de prensa", "periodismo independiente", "gentrificación", "crimen organizado", "feminicidios"]
 cover: "/series/NaceAztecHorse/images/portada.jpg"
 image1: "/series/NaceAztecHorse/images/mapa-desplazamiento.png"
 image2: "/series/NaceAztecHorse/images/tren-maya-selva.png"
-series: "NaceAztecHorse"
+series: "NaceCaballoAzteca"
 layout: ../../../layouts/ArticleLayout.astro
 ---
 
-# ¿De dónde nace AztecHorse?
+# ¿De dónde nace Caballo Azteca?
 
-AztecHorse no es un medio tradicional. Nace sin financiamiento, sin intereses corporativos, y sin rostro visible. Su origen es el anonimato, su motor la urgencia, y su vocación el periodismo de resistencia.
+Caballo Azteca no es un medio tradicional. Nace sin financiamiento, sin intereses corporativos, y sin rostro visible. Su origen es el anonimato, su motor la urgencia, y su vocación el periodismo de resistencia.
 
-Vivimos en una tierra hermosa pero silenciada. Mientras Quintana Roo se transforma ante el avance del turismo masivo y el capital extranjero, aumentan también la corrupción, la impunidad, el desplazamiento y la violencia. Y lo peor: muchos de estos temas ni siquiera se investigan. Ahí entra AztecHorse.
+Vivimos en una tierra hermosa pero silenciada. Mientras Quintana Roo se transforma ante el avance del turismo masivo y el capital extranjero, aumentan también la corrupción, la impunidad, el desplazamiento y la violencia. Y lo peor: muchos de estos temas ni siquiera se investigan. Ahí entra Caballo Azteca.
 
 ## ¿Por qué el anonimato?
 
@@ -22,6 +22,23 @@ Porque hacer periodismo en México puede costar la vida.
 Según datos de **Artículo 19**, al menos **43 periodistas han sido asesinados en este sexenio por motivos relacionados con su labor informativa**. El sureste del país —y en especial Quintana Roo— no ha sido ajeno: reporteros han sido amenazados, desaparecidos o silenciados por exponer verdades incómodas.
 
 Este medio, por eso, no tiene redacción física. Funciona en red. Se aloja en servidores descentralizados (IPFS), usa cifrado punto a punto, y mantiene su operación fuera del control de autoridades o empresas. Es la única manera de sobrevivir para informar.
+
+## ¿Cómo trabajo?
+
+Este proyecto no soy solo yo. Detrás de cada historia hay personas que confían, que se arriesgan, que aportan un dato, una pista, una verdad incómoda.  
+Sé que no será fácil. Lo que intento construir es grande: **un periodismo libre, sin ataduras ni miedo**, en un entorno que muchas veces castiga la verdad.
+
+Tal vez sea una meta ambiciosa, pero **una montaña se construye con muchos granos de arena**. Paso a paso, historia por historia, sé que es posible.
+
+Mi forma de investigar combina distintas herramientas, siempre con ética y con el compromiso de proteger a quienes deciden hablar:
+
+- Investigación tradicional (fuentes directas, entrevistas, documentos)  
+- OSINT (inteligencia de fuentes abiertas)  
+- Periodismo de filtración (whistleblowers, documentos, testimonios)  
+- Protección de fuentes (PGP, mensajería cifrada, servidores fuera del país)
+
+Esto apenas comienza, pero con tu ayuda, podemos llegar muy lejos.
+
 
 ## ¿Qué vamos a investigar?
 
@@ -34,36 +51,45 @@ La gentrificación no es solo una cuestión de renta elevada. Es violencia econ�
 
 El **Tren Maya**, por su parte, ha generado el **desplazamiento directo de más de 6,500 personas**, muchas sin consulta indígena previa, violando el Convenio 169 de la OIT. Más de **100 sitios arqueológicos** y zonas naturales protegidas han sido afectadas o destruidas.
 
-![Mapa de desplazamiento y destrucción](/series/NaceAztecHorse/images/mapa-desplazamiento.png)
-
 #### 2.Crimen organizado con protección institucional
 
 En Cancún, Playa del Carmen y Tulum operan activamente cinco grupos criminales: **CJNG, Cártel de Sinaloa, Cártel del Golfo, Cártel del Noreste y Los Pelones**. De acuerdo con informes del *Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública*, entre 2023 y 2025 se registraron **más de 890 homicidios dolosos** en la zona norte del estado, muchos con signos de ejecución.
 
-Las balaceras en zonas turísticas —como el tiroteo en la playa de Xcaret (2022) o el ataque en el bar "La Malquerida" (2023)— confirman que la violencia no está contenida. Y lo más grave: **en múltiples casos se ha vinculado a policías municipales, agentes ministeriales y funcionarios locales como cómplices o facilitadores**.
+![Crimen Organizado protegiedo](/series/NaceAztecHorse/images/crimenorg.png)
 
-#### 3.Feminicidios, trata y desapariciones
+En lo que va de 2025, la violencia en zonas turísticas como Playa del Carmen y Tulum ha continuado con ejecuciones y enfrentamientos ligados al narcomenudeo. Lo más alarmante es que en varios casos se ha documentado la protección o complicidad de policías municipales, fiscales y funcionarios que, en vez de perseguir el crimen, lo facilitan desde dentro de las instituciones.
 
-Quintana Roo ocupa los primeros lugares a nivel nacional en feminicidios por cada 100 mil habitantes. En 2024 se documentaron:
 
-- **198 desapariciones de mujeres** (Fuente: Registro Nacional de Personas Desaparecidas)
-- **35 feminicidios** confirmados
-- Decenas de redes de trata que operan bajo la fachada del turismo sexual
+#### 3. Feminicidios, trata y desapariciones
 
-Según datos oficiales, **el 32% de las mujeres asesinadas había denunciado previamente violencia doméstica o acoso**, sin recibir protección efectiva. Cada caso es una muestra de un sistema que falla sistemáticamente a las víctimas.
+Quintana Roo se mantiene entre los estados con mayor tasa de feminicidios por cada 100 mil habitantes. La violencia de género en la región no solo persiste, sino que **se agrava en contextos turísticos donde operan redes de trata bajo total impunidad**.
 
-#### 4.Censura estructural
+- En **2025**, se han emitido **más de 400 reportes de búsqueda de personas desaparecidas** en el estado, muchas de ellas mujeres y niñas.  
+- Durante **2024**, se documentaron **106 desapariciones de mujeres, niñas y adolescentes**, de las cuales **7 fueron encontradas sin vida**.  
+- En un alto porcentaje de casos, las víctimas habían **denunciado previamente violencia o acoso**, sin recibir protección efectiva por parte de las autoridades.
 
-En Quintana Roo, la mayoría de los grandes medios dependen de convenios de publicidad con los gobiernos locales. Esto ha generado una **autocensura estructural**, especialmente en temas como corrupción, crimen organizado o megaproyectos. Periodistas que se atreven a denunciar son despedidos, amenazados o silenciados.
+![Feminicidios y trata](/series/NaceAztecHorse/images/femin.png)
 
-AztecHorse nace como un contrapeso. No aceptamos dinero público ni privado. No publicamos publicidad. No respondemos a intereses. Solo a la verdad.
+Estos datos reflejan una **crisis estructural**: las instituciones encargadas de proteger a las mujeres no solo fallan, sino que en muchos casos ignoran alertas previas.
 
-## ¿Cómo trabajamos?
+---
 
-- Investigación tradicional (fuentes, entrevistas, documentos)
-- OSINT (inteligencia de fuentes abiertas)
-- Periodismo de filtración (documentos, testigos, whistleblowers)
-- Protección de fuentes mediante PGP, mensajería cifrada y alojamientos fuera del país
+🔴 **Si ya denunciaste ante las autoridades y no obtuviste respuesta**, puedes contactarnos de forma segura y anónima.  
+Nuestro medio se compromete a proteger tu identidad y dar visibilidad a casos ignorados.  
+📩 [Contáctanos aquí](/contact)
+
+#### 4. Corrupción política y malversación de fondos
+
+En Quintana Roo, altos funcionarios han sido investigados por desvíos millonarios: el exgobernador **Roberto Borge** fue acusado de desfalcar más de 2 mil millones de pesos y de vender predios públicos a precios ridículamente bajos mediante una red institucional que favorecía intereses privados :contentReference[oaicite:1]{index=1}.  
+Asimismo, el ex presidente municipal **Mauricio Góngora** enfrenta un juicio por un presunto desvío de más de 400 millones de pesos durante su administración :contentReference[oaicite:2]{index=2}.
+
+![Corrupcion](/series/NaceAztecHorse/images/corrupcion.png)
+
+En cuanto a inversiones estratégicas, la disputa con la minera estadounidense **Vulcan Materials** sobre terrenos en Playa del Carmen ha tensado relaciones diplomáticas: México enfrenta un arbitraje internacional por reclamaciones que podrían ascender a **1,500 millones de dólares**, tras clausurar operaciones alegando incumplimientos ambientales; esto impacta la confianza de inversores extranjeros críticos para el desarrollo regional :contentReference[oaicite:3]{index=3}.
+
+---
+
+Caballo Azteca nace como un contrapeso real: no aceptamos ni financiamiento público, ni subvenciones privadas, ni publicidad comercial. No respondemos a intereses económicos ni partidos. Solo a la verdad y a la ciudadanía.
 
 ## ¿Qué puedes hacer tú?
 
