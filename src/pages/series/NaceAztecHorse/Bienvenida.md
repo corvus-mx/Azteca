@@ -30,7 +30,7 @@ Playas vírgenes transformadas en desarrollos turísticos de lujo. Comunidades m
 
 Según datos del *Consejo Nacional de Evaluación de la Política de Desarrollo Social (CONEVAL)*, más del **65% de la población indígena en Quintana Roo vive en condiciones de pobreza**, y el Tren Maya ha acentuado este problema. Al menos **6,500 personas han sido desplazadas o reubicadas** por la construcción del megaproyecto, muchas sin consulta previa ni indemnización justa.
 
-![Mapa de desplazamiento y destrucción](/series/introduccion/images/mapa-desplazamiento.jpg)
+![Mapa de desplazamiento y destrucción](/series/NaceAztecHorse/images/mapa-desplazamiento.jpg)
 
 **2. Crimen organizado institucionalizado**
 
@@ -60,7 +60,7 @@ Este artículo es solo el inicio de una serie de investigaciones que revelarán:
 
 Cada serie contará con evidencia verificada, testimonios protegidos y trabajo de campo digital y físico.
 
-![Tren Maya en zonas naturales protegidas](/series/introduccion/images/tren-maya-selva.jpg)
+![Tren Maya en zonas naturales protegidas](/series/NaceAztecHorse/images/tren-maya-selva.jpg)
 
 ## ¿Qué puedes hacer tú?
 
