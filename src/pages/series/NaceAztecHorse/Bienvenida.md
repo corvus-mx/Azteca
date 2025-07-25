@@ -6,7 +6,7 @@ tags: ["bienvenida", "libertad de prensa", "periodismo independiente", "gentrifi
 cover: "/series/NaceAztecHorse/images/portada.jpg"
 image1: "/series/NaceAztecHorse/images/mapa-desplazamiento.png"
 image2: "/series/NaceAztecHorse/images/tren-maya-selva.png"
-series: "aceAztecHorse"
+series: "NaceAztecHorse"
 layout: ../../../layouts/ArticleLayout.astro
 ---
 
