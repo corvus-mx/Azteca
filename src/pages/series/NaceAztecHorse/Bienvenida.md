@@ -3,9 +3,9 @@ title: "¿De dónde nace AztecHorse?"
 date: "2025-07-24"
 summary: "AztecHorse es un acto de resistencia desde el anonimato. En este artículo fundacional explicamos por qué nace este medio, qué vamos a investigar y cómo puedes participar."
 tags: ["bienvenida", "libertad de prensa", "periodismo independiente", "gentrificación", "crimen organizado", "feminicidios"]
-cover: "/series/introduccion/images/portada.jpg"
-image1: "/series/introduccion/images/mapa-desplazamiento.jpg"
-image2: "/series/introduccion/images/tren-maya-selva.jpg"
+cover: "/series/NaceAztecHorse/images/portada.jpg"
+image1: "/series/NaceAztecHorse/images/mapa-desplazamiento.jpg"
+image2: "/series/NaceAztecHorse/images/tren-maya-selva.jpg"
 series: "introduccion"
 layout: ../../../layouts/ArticleLayout.astro
 ---
