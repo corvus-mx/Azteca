@@ -5,7 +5,7 @@ import matter from "gray-matter";
 export function getAllSeries() {
   const baseDir = path.join(process.cwd(), 'src/pages/series');
   const seriesDirs = fs.readdirSync(baseDir).filter((name) => {
-    return fs.statSync(path.join(baseDir, name)).isDirectory();
+    return fs.statSync(path.join(baseDir, name)).isDirectory() && !name.startsWith('[');
   });
 
   return seriesDirs.map((folder) => {
