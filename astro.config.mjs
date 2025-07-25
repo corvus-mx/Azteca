@@ -1,8 +1,13 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
   output: 'static',
-  base: '/', // ⚠️ En Netlify debe ser '/' o se rompe el CSS
+  base: '/',
+  vite: {
+    resolve: {
+      alias: {
+        "@": new URL("./src", import.meta.url).pathname
+      }
+    }
+  }
 });
-
-
