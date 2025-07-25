@@ -94,8 +94,8 @@ const { title, subtitle } = Astro.props;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: var(--space-md);
-    padding: var(--space-lg);
+    padding: var(--space-md);
+    gap: var(--space-sm);
     background: var(--color-surface-primary);
     border: 2px solid var(--color-border);
     border-radius: var(--radius-xl);
@@ -119,9 +119,17 @@ const { title, subtitle } = Astro.props;
   }
 
   .badge-image {
-    width: 64px;
-    height: auto;
-    display: block;
+  
+ /* Que ocupe todo el ancho disponible dentro del badge */
+  width: 90%;
+  /* Mantener proporción */
+  height: auto;
+  /* Ajustar recorte para que llene bien el contenedor */
+  object-fit: cover;
+  /* Bordes redondeados */
+  border-radius: var(--radius-md);
+  /* Opcional: sombra interior para darle relieve */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
   }
 
   /* Responsive */
