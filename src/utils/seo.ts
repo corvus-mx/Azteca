@@ -7,10 +7,10 @@ interface SeoOptions {
 }
 
 export function getSeo({
-  title = 'Corvus News - Periodismo Independiente',
-  description = 'Investigaciones periodísticas sobre política, medioambiente, y poder en México y Quintana Roo.',
-  image = '/images/cover.jpg',
-  url = 'https://corvusnews.com',
+  title = 'CaballoAzteca - Periodismo Independiente',
+  description = 'Luchando por la libre prensa y ña soberania en México y Quintana Roo.',
+  image = 'aztech.png',
+  url = '',
   type = 'website'
 }: SeoOptions = {}) {
   return {
