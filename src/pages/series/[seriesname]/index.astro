@@ -16,7 +16,7 @@ const articles = Object.entries(allPosts)
     const slug = path.split('/').pop()?.replace('.md', '');
     return {
       ...frontmatter,
-      url: `/series/${seriesname}/${slug}`
+      link: `/series/${seriesname}/${slug}`
     };
   });
 
