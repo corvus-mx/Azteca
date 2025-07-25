@@ -129,7 +129,7 @@ const { title, subtitle } = Astro.props;
   }
 
   /* Responsive */
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
     gap: var(--space-xl);
@@ -147,18 +147,25 @@ const { title, subtitle } = Astro.props;
 
   .hero-badge {
     flex-direction: column;
-    padding: var(--space-md);
+    padding: var(--space-xl);
     transform: rotate(0deg);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .badge-image {
-    width: 48px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .badge-text {
     font-size: 0.9rem;
   }
 }
+
 
 
   @media (max-width: 480px) {
