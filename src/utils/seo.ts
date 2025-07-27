@@ -10,7 +10,7 @@ export function getSeo({
   title = 'CaballoAzteca - Periodismo Independiente',
   description = 'Luchando por la libre prensa y la soberania en México y Quintana Roo.',
   image = '/aztech.png',
-  url = '',
+  url = 'https://caballoazteca.netlify.app',
   type = 'website'
 }: SeoOptions = {}) {
   return {
