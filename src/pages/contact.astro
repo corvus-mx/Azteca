@@ -2,64 +2,122 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Contacto seguro" description="Comunicación cifrada y canales seguros para periodistas e informantes.">
-  <section>
+<BaseLayout title="Contacto seguro" description="Protege tu identidad. Comparte información de forma cifrada y anónima.">
+  <section class="secure-contact">
     <h1>Contacto seguro</h1>
 
-    <p>Tu seguridad y privacidad son nuestra prioridad. Puedes contactarnos por canales seguros sin revelar tu identidad. Toda comunicación será tratada con confidencialidad absoluta.</p>
+    <p>
+      Hacer periodismo independiente en México implica riesgos reales. Si tienes información que debe ser conocida, puedes compartirla de forma segura, sin revelar tu identidad. Aquí no recolectamos datos. No pedimos confianza: la construimos con cada caso protegido.
+    </p>
 
     <h2>📂 Filtrar documentos o evidencia</h2>
-    <p>Si tienes documentos, fotos, videos o información que desees filtrar, puedes enviarlos por correo cifrado o a través de plataformas de mensajería segura. Asegúrate de eliminar los metadatos y cualquier rastro de identificación antes de hacerlo.</p>
-    <p>Nos comprometemos a:</p>
+    <p>
+      Si cuentas con archivos, fotografías, grabaciones o testimonios que expongan corrupción, abusos o injusticias, puedes enviarlos cifrados. Antes, elimina cualquier metadato o rastro que pueda identificarte.
+    </p>
     <ul>
-      <li>Proteger tu identidad y respetar tu anonimato.</li>
-      <li>Verificar y tratar con seriedad toda la información recibida.</li>
-      <li>Publicar solo lo que sea de interés público y esté respaldado por evidencia.</li>
+      <li>✔️ Tu anonimato es nuestra prioridad</li>
+      <li>✔️ Verificamos toda información con criterios periodísticos</li>
+      <li>✔️ Solo publicamos lo que tiene interés público y está respaldado</li>
     </ul>
-    <br/>
-    <h2>📧 Correo seguro (PGP)</h2>
-    <p>Nuestra opción preferida es el correo cifrado con <strong>ProtonMail</strong>, por su enfoque en la privacidad y facilidad de uso.</p>
-    <p>Email: <code>caballoazteca@proton.me</code></p>
+
+    <h2>📧 Correo seguro (ProtonMail + PGP)</h2>
+    <p>
+      Prefiero el uso de <strong>ProtonMail</strong> por su cifrado nativo. Puedes escribirme directamente a:
+    </p>
+    <p><code>caballoazteca@proton.me</code></p>
     <p><a href="/pgp-key.asc" download>Descargar clave pública PGP (.asc)</a></p>
 
     <details>
-      <summary><strong>¿Por qué cifrar con PGP?</strong></summary>
-      <p>PGP (Pretty Good Privacy) es una herramienta de cifrado que permite enviar correos electrónicos que solo el destinatario podrá leer.</p>
-      <p><strong>¿Por qué usarlo?</strong></p>
+      <summary><strong>¿Por qué usar PGP?</strong></summary>
+      <p>
+        Porque cifra tu mensaje desde el origen. Nadie, salvo yo, podrá leer lo que envías. Es una herramienta usada por periodistas y activistas en todo el mundo.
+      </p>
       <ul>
-        <li>Evita que tu mensaje sea interceptado o leído por terceros.</li>
-        <li>Garantiza que el contenido solo pueda ser descifrado por nuestro equipo.</li>
-        <li>Permite el anonimato total al no requerir datos personales.</li>
+        <li>🔐 Protege contra espionaje e interceptación</li>
+        <li>🔐 Permite mantener tu identidad en secreto</li>
+        <li>🔐 No necesitas revelar ningún dato personal</li>
       </ul>
-
-      <a href="naceaztechorse/guiapgp/" class="button-link" style="display:inline-block; margin-top:1em; padding:0.6em 1.2em; background:#0070f3; color:white; border-radius:4px; text-decoration:none; font-weight:bold;">
-        Leer guía completa de cifrado PGP →
+      <a href="/series/NaceAztecHorse/guiapgp/" class="button-link">
+        Leer guía completa →
       </a>
     </details>
 
-     <br/>
-     <br/>
-<!--
-    <h2>📱 Mensajería cifrada</h2>
+    <h2>🔐 Recomendaciones básicas para protegerte</h2>
     <ul>
-      <li><strong>Signal:</strong> +52 999 123 4567</li>
-      <li><strong>Telegram:</strong> <a href="https://t.me/aliasperiodista" target="_blank">@aliasperiodista</a></li>
+      <li>Usa dispositivos y correos distintos a los que usas a diario</li>
+      <li>Conéctate desde una red pública o mediante VPN/Tor</li>
+      <li>Desactiva GPS, metadatos, y elimina nombres de archivos</li>
+      <li>No compartas datos personales si no es indispensable</li>
+      <li>Hazlo desde tu tiempo y tu seguridad. No estás solo/a.</li>
     </ul>
--->
-    <h2>🔐 Recomendaciones para proteger tu identidad</h2>
-    <ul>
-      <li>Evita comunicarte desde tu teléfono o correo habitual. Usa dispositivos y cuentas separadas.</li>
-      <li>Conéctate desde una red Wi-Fi pública o a través de una VPN o Tor.</li>
-      <li>Desactiva la ubicación en tu dispositivo antes de enviar cualquier mensaje.</li>
-      <li>Revisa los archivos adjuntos antes de enviarlos. Elimina metadatos, nombres o información que pueda vincularte.</li>
-      <li>No reveles detalles personales innecesarios. Puedes usar seudónimos.</li>
-    </ul>
-
-    
 
     <p style="margin-top:2em;text-align:center;">
       <a href="/" class="button">Volver al inicio</a>
     </p>
   </section>
-</BaseLayout>
 
+  <style>
+    .secure-contact {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .secure-contact h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .secure-contact h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      color: var(--color-accent);
+    }
+
+    .secure-contact p {
+      margin-bottom: 1rem;
+    }
+
+    .secure-contact ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+
+    .secure-contact li {
+      margin-bottom: 0.6rem;
+    }
+
+    .button-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #0070f3;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .button-link:hover {
+      background: #005fc1;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 1rem;
+      color: var(--color-text-primary);
+    }
+
+    details p,
+    details ul {
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+  </style>
+</BaseLayout>

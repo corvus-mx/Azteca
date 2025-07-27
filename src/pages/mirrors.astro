@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contacto seguro" description="Protege tu identidad. Comparte información de forma cifrada y anónima.">
+  <section class="mirrors-access">
+  <h1>Puertas de entrada a Caballo Azteca</h1>
+
+  <p>
+    Este medio fue diseñado para resistir bloqueos. Si en algún momento el sitio principal deja de estar disponible, puedes acceder al contenido por estas rutas seguras. Son independientes entre sí, cifradas y resistentes a la censura.
+  </p>
+
+  <h2>🌐 Sitio principal</h2>
+  <ul>
+    <li><strong>HTTPS:</strong> <a href="https://caballoazteca.org" target="_blank">https://caballoazteca.org</a></li>
+  </ul>
+
+  <h2>🕳️ Red Tor</h2>
+  <p>
+    Para máxima privacidad, puedes acceder vía <strong>Tor</strong>. Necesitas tener instalado el <strong>Navegador Tor</strong>, que permite explorar sitios .onion dentro de una red cifrada y descentralizada. Estos dominios no están registrados en sistemas centrales y son prácticamente imposibles de censurar o rastrear.
+  </p>
+  <ul>
+    <li><strong>.onion:</strong> <code>http://caballoazteca7zjf.onion</code></li>
+  </ul>
+
+  <h2>📦 IPFS / IPNS (acceso descentralizado)</h2>
+  <p>
+    Nuestro contenido también vive en <strong>IPFS</strong>: un sistema distribuido de archivos que no depende de servidores centrales. En lugar de una URL tradicional, el contenido se identifica por su huella digital criptográfica.
+  </p>
+  <p>
+    A diferencia de IPFS puro, usamos <strong>IPNS</strong> para que la dirección sea permanente aunque actualicemos el contenido. Esto asegura que siempre verás la versión más reciente, sin importar dónde estés.
+  </p>
+  <ul>
+    <li><strong>Gateway IPFS:</strong> <a href="https://ipfs.io/ipfs/QmEjemploHash" target="_blank">ipfs.io/ipfs/QmEjemploHash</a></li>
+    <li><strong>Cloudflare:</strong> <a href="https://cloudflare-ipfs.com/ipfs/QmEjemploHash" target="_blank">cloudflare-ipfs.com/ipfs/QmEjemploHash</a></li>
+  </ul>
+
+  <h2>🔐 Recomendaciones</h2>
+  <ul>
+    <li>Accede siempre desde navegadores seguros. Si puedes, usa <strong>Tor</strong>.</li>
+    <li>No abras enlaces desde redes sociales o correos. Escríbelos directamente o usa un lector de QR.</li>
+    <li>Verifica que la dirección comience con <code>https://</code> o esté dentro de la red Tor.</li>
+    <li>Guarda esta página offline. Puedes imprimirla o generar un PDF.</li>
+  </ul>
+
+  <blockquote>
+    Caballo Azteca no vive en un solo servidor. Nuestra voz es distribuida, cifrada y libre. 
+    Aunque intenten silenciarnos, siempre habrá un espejo encendido.
+  </blockquote>
+
+  <p style="margin-top:2em; text-align:center">
+    <a href="/" class="button">Volver al inicio</a>
+  </p>
+</section>
+
+<style>
+  .mirrors-access {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .mirrors-access h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .mirrors-access h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: var(--color-accent);
+  }
+
+  .mirrors-access p {
+    margin-bottom: 1rem;
+  }
+
+  .mirrors-access ul {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+  }
+
+  .mirrors-access li {
+    margin-bottom: 0.6rem;
+  }
+
+  .mirrors-access code {
+    background: var(--color-surface-secondary);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+</style>
+</BaseLayout>
