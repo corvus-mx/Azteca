@@ -35,9 +35,7 @@ PGP es usado por medios como **Wikileaks**, **The Intercept** y organizaciones c
 - Su código es abierto y ha sido auditado
 
 > 📬 Mi dirección segura: `caballoazteca@protonmail.com`  
-<p>
-  🔑 <a href="/pgp-key.asc" download>Descargar clave pública PGP (.asc)</a>
-</p>
+>🔑 <a href="/pgp-key.asc" download>Descargar clave pública PGP (.asc)</a>
 
 ## Casos reales: ¿por qué es urgente?
 
