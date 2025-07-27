@@ -29,21 +29,20 @@ PGP es usado por medios como **Wikileaks**, **The Intercept** y organizaciones c
 
 **ProtonMail** es un servicio de correo basado en Suiza, con cifrado de extremo a extremo. No rastrea IPs, no vende datos y permite usar PGP directamente. Es fácil, gratuito y seguro.
 
+> 📬 Mi dirección segura: `caballoazteca@protonmail.com`  
+>🔑 <a href="/pgp-key.asc" download>Descargar clave pública PGP (.asc)</a>
 ### Ventajas que valoro:
 - Cifrado automático si escribes desde otra cuenta de ProtonMail
 - Permite integrar PGP sin instalar nada adicional
 - Su código es abierto y ha sido auditado
 
-> 📬 Mi dirección segura: `caballoazteca@protonmail.com`  
->🔑 <a href="/pgp-key.asc" download>Descargar clave pública PGP (.asc)</a>
+> 🔴 Filtrar sin protección ha costado vidas. Cifrar puede salvarlas.
 
 ## Casos reales: ¿por qué es urgente?
 
 - **Miroslava Breach** fue asesinada tras ser hackeada por investigar narcopolítica
 - **Nevith Condés Jaramillo** murió tras enviar reportes sin cifrado
 - **Fredy López Arévalo** fue atacado luego de amenazas por correo convencional
-
-> 🔴 Filtrar sin protección ha costado vidas. Cifrar puede salvarlas.
 
 ---
 
@@ -84,11 +83,11 @@ Copia el contenido generado en el archivo `.asc` y pégalo en tu correo.
 
 ---
 
-## ¿Y si no sabes usar PGP?
+## ¿Aun sin entender?
 
 No pasa nada. Si tienes ProtonMail, puedes escribirme directamente desde ahí. El cifrado extremo a extremo se activa automáticamente.
 
-> ⚠️ Si usas Gmail, Outlook u otro correo común, tus mensajes **no estarán cifrados** completamente.
+> ⚠️ Si usas Gmail, Outlook u otro correo común, tus mensajes **no estarán cifrados** completamente porfavor **NO ENVIES USANDO CORREOS COMUNES SIN PGP**.
 
 ---
 
