@@ -3,12 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 import SeriesCard from "../components/SeriesCard.astro";
-import { getAllSeries } from "../utils/content.ts";
+import { getAllSeries } from "../utils/content";
+
 const series = await getAllSeries();
 ---
 <BaseLayout title="Inicio" description="Periodismo investigativo y filtraciones en Quintana Roo y México.">
   <Hero 
-    title="Defendamos la libre prensa en Q.Roo y Mexico"
+    title="Defendamos la libre prensa en la Q.Roo y Mexico"
     subtitle="Periodismo de investigación comprometido con la verdad, abierto a denuncias y filtraciones anónimas."
   />
   <section>
