@@ -1,130 +1,107 @@
 ---
-title: "Proteccion a fuentes: Guía práctica para usar PGP con ProtonMail"
+title: "Protege tus fuentes: Guía clara para usar PGP con ProtonMail"
 date: "2025-07-24"
-summary: "La protección de fuentes es vital en el periodismo de investigación. En este artículo explicamos cómo utilizar PGP para asegurar comunicaciones con AztecHorse, con énfasis en el uso de ProtonMail y en los riesgos reales que enfrentan periodistas y denunciantes en México."
+summary: "Proteger la identidad de quienes denuncian corrupción, violencia o crimen organizado es una responsabilidad ética. Esta guía práctica explica cómo cifrar tus mensajes con PGP y por qué usamos ProtonMail como canal seguro."
 tags: ["seguridad digital", "PGP", "protección de fuentes", "filtraciones", "periodismo"]
 series: "NaceAztecHorse"
 layout: ../../../layouts/ArticleLayout.astro
 ---
 
-# Protegemos a las fuentes: Guía práctica para usar PGP con ProtonMail
+# Protege tus fuentes: Cómo usar PGP con ProtonMail
 
-En México, el periodismo no solo exige compromiso, sino valentía. Cada denuncia, cada investigación que toca intereses criminales o políticos, se convierte en un riesgo tangible. Según **Artículo 19**, entre 2010 y 2024 más de **161 periodistas fueron asesinados** en el país, muchos de ellos tras haber sido víctimas de filtraciones, hackeos o persecución digital. En este contexto, la seguridad digital ya no es una opción: **es una obligación ética para proteger a nuestras fuentes y a nosotros mismos**.
+Hacer periodismo en México puede costar la vida. Cada denuncia puede poner en riesgo a quien la filtra. Por eso, proteger la comunicación es una obligación. Entre 2010 y 2024, **más de 160 periodistas fueron asesinados**, muchos tras ser vulnerados digitalmente. Si eres periodista, informante o testigo, esta guía te ayudará a **enviar mensajes cifrados de forma segura**.
 
-## ¿Qué es PGP y por qué importa?
+## ¿Qué es PGP y por qué lo usamos?
 
-**PGP (Pretty Good Privacy)** es una tecnología de cifrado que permite enviar correos electrónicos y archivos de manera que solo el destinatario pueda leerlos. Funciona con un par de llaves: una pública (que compartes) y una privada (que proteges).
+**PGP (Pretty Good Privacy)** es una herramienta de cifrado que convierte un mensaje en algo ilegible para cualquiera, excepto el destinatario. Funciona con:
 
-Usar PGP garantiza que:
+- Una **clave pública** (que compartimos y tú usas para cifrar)
+- Una **clave privada** (que solo nosotros usamos para descifrar)
 
-- Ningún proveedor de correo (ni siquiera ProtonMail) pueda leer tus mensajes.
-- Nadie pueda interceptar o falsificar comunicaciones con AztecHorse.
-- Se preserve la confidencialidad de denuncias sensibles y la integridad de las fuentes.
+PGP es usado por medios como **Wikileaks**, **The Intercept** y organizaciones como la **EFF** o la **Freedom of the Press Foundation**.
 
-PGP es un estándar utilizado por organizaciones como **Wikileaks, The Intercept y ProPublica**, y **recomendado por Electronic Frontier Foundation y Freedom of the Press Foundation**.
+### Beneficios de usar PGP:
+- Nadie (ni siquiera el proveedor de correo) puede leer tu mensaje
+- Impide interceptaciones o falsificaciones
+- Protege tu identidad si decides denunciar
 
-## Casos reales en México: ¿por qué es urgente?
+## ¿Por qué elegimos ProtonMail?
 
-La falta de cifrado ha costado vidas. Algunos ejemplos:
+**ProtonMail** es un servicio de correo basado en Suiza, con cifrado de extremo a extremo. No rastrea IPs, no vende datos, y tiene integración directa con PGP. Es fácil, gratuito y compatible con otras plataformas seguras.
 
-- **Miroslava Breach (2017)** fue asesinada en Chihuahua tras publicar reportajes sobre narcopolítica. Su computadora y correos fueron vulnerados antes de su ejecución.
-- **Nevith Condés Jaramillo (2019)**, periodista del Estado de México, fue amenazado tras enviar reportes por correo sin cifrar. Días después fue encontrado muerto con heridas de arma blanca.
-- **Fredy López Arévalo (2021)**, asesinado en Chiapas, había recibido amenazas por investigaciones enviadas desde correos convencionales.
+### Ventajas de ProtonMail:
+- Cifrado automático si escribes desde otra cuenta ProtonMail
+- Permite usar PGP sin instalar nada adicional
+- Código abierto y con auditorías públicas
 
-Estos casos revelan un patrón: **las filtraciones digitales son tan letales como una bala**.
+> 📬 Nuestra dirección segura: `caballoazteca@protonmail.com`  
+> 🔑 [Descargar clave pública PGP (.asc)](/pgp-key.asc)
 
-## ¿Por qué usar ProtonMail?
+## Casos reales en México: ¿por qué importa tanto?
 
-**ProtonMail** es un servicio de correo cifrado de extremo a extremo con sede en Suiza, fuera de la jurisdicción de gobiernos represivos. No guarda logs de IP, no escanea tu contenido, y permite integrar PGP de forma sencilla.
+- **Miroslava Breach** fue asesinada tras ser hackeada por investigar narcopolítica
+- **Nevith Condés Jaramillo** murió tras enviar reportes sin cifrado
+- **Fredy López Arévalo** fue atacado tras recibir amenazas por correo convencional
 
-En AztecHorse **preferimos ProtonMail para toda comunicación segura** porque:
+> 🔴 Las filtraciones inseguras han costado vidas. Cifrar puede salvarlas.
 
-- Es fácil de usar y gratuito.
-- Soporta PGP de forma nativa.
-- Tiene código abierto y auditorías públicas.
-- No comparte datos con gobiernos ni corporaciones.
+---
 
-> 💡 **Nota:** Aunque aceptamos otros canales cifrados como Tox y Signal, **ProtonMail + PGP es nuestra vía principal de contacto seguro**.
+## ¿Cómo enviar un correo cifrado paso a paso?
 
-## Cómo enviar un correo cifrado a AztecHorse usando PGP
-
-### 1. Instala GPG en tu sistema
+### 1. Instala GPG
 
 **Linux/macOS:**
-
 ```bash
-brew install gnupg      # para macOS con Homebrew
-sudo apt install gnupg  # para Debian/Ubuntu
+brew install gnupg      # macOS con Homebrew
+sudo apt install gnupg  # Debian/Ubuntu
 ```
-## Windows
 
-Descarga **Gpg4win** desde [https://gpg4win.org](https://gpg4win.org)
+**Windows:**
+Descarga [Gpg4win](https://gpg4win.org)
 
-## 2. Importa nuestra clave pública
-
-Copia nuestra clave pública desde la sección [Contacto](../../contact) o descárgala desde un keyserver:
+### 2. Importa nuestra clave pública
 
 ```bash
 gpg --keyserver keyserver.ubuntu.com --recv-keys [ID_DE_LA_LLAVE]
 ```
 
-Reemplaza `[ID_DE_LA_LLAVE]` por el ID real que encontrarás en nuestro contacto.
+(Encuentra el ID real en nuestra [página de contacto](../../contact))
 
-## 3. Cifra tu mensaje
-
-Guarda tu mensaje en un archivo `mensaje.txt` y luego ejecuta:
+### 3. Escribe tu mensaje y cifra
 
 ```bash
-gpg --encrypt --armor --recipient aztechorse@protonmail.com mensaje.txt
+echo "Tu mensaje aquí" > mensaje.txt
+gpg --encrypt --armor --recipient caballoazteca@protonmail.com mensaje.txt
 ```
 
-Esto generará un archivo `.asc` que puedes pegar directamente en tu correo desde cualquier cuenta (de preferencia desde tu propia cuenta de ProtonMail para mayor compatibilidad).
+Copia el contenido generado en el archivo `.asc` y pégalo en tu correo.
 
-## 4. Verifica la dirección
-
-Asegúrate de que estás escribiendo al correo correcto:
-
-📧 `aztechorse@protonmail.com`  
-⚠️ Solo confía en direcciones confirmadas en nuestro sitio oficial.
-
-## 5. Borra tus rastros
-
-- Elimina los archivos `.txt` y `.asc` de tu computadora.  
-- Usa modo incógnito o navegador **Tor** si tu dispositivo no es seguro.  
-- Evita usar redes Wi-Fi públicas o institucionales.
+### 4. Revisa el correo
+- Asegúrate de enviar a: `caballoazteca@protonmail.com`
+- Borra el archivo `.txt` y `.asc` de tu computadora
+- Usa el navegador **Tor** o una VPN si es posible
 
 ---
 
-## ¿Y si no sé usar PGP?
+## ¿Y si no sabes usar PGP?
 
-No te preocupes. Puedes escribirnos desde **ProtonMail a ProtonMail**, lo cual activa cifrado automático extremo a extremo sin necesidad de claves manuales.
+No pasa nada. Si tienes cuenta en ProtonMail, escribe directamente desde ahí. El cifrado se activa automáticamente entre usuarios ProtonMail.
 
-> ⚠️ Si nos escribes desde una cuenta convencional (Gmail, Outlook), tus mensajes **NO** estarán cifrados de extremo a extremo.
-
----
-
-## Seguridad digital no es paranoia: es supervivencia
-
-No basta con investigar. **Tenemos que protegernos mutuamente.**
-
-Cada denuncia que recibimos será tratada con confidencialidad. Si tienes información sobre:
-
-- Corrupción en gobiernos locales  
-- Tráfico de tierras o desplazamientos  
-- Vínculos entre crimen organizado e inmobiliarias  
-- Violencia de género o represión  
-
-**No te calles. Escríbenos.**
-
-📩 [Envíanos tu denuncia segura →](../../contact)
+> ⚠️ Si usas Gmail, Outlook u otros correos comunes, tu mensaje **NO** estará cifrado de extremo a extremo.
 
 ---
 
-## Bibliografía y fuentes
+## ¿Qué tipo de información puedes enviar?
 
-- Artículo 19 México: https://articulo19.org  
-- Freedom of the Press Foundation: https://freedom.press  
-- Reporte de amenazas digitales a periodistas 2023 – SocialTIC  
-- Guía de cifrado EFF: https://ssd.eff.org  
-- Datos de feminicidios y desapariciones – INEGI, SESNSP  
-- Reporte ONU DDHH sobre desplazamientos por megaproyectos (Tren Maya)
+- Corrupción en gobiernos o fiscalías
+- Vínculos entre crimen organizado e inmobiliarias
+- Abusos de poder, violencia institucional o desapariciones
+
+**Tu testimonio puede detonar una investigación.**
+
+📩 [Filtra información desde aquí](../../contact)
+
+---
+
+**Proteger a quien denuncia es el primer paso para cambiar lo que importa.**
