@@ -8,8 +8,8 @@ interface SeoOptions {
 
 export function getSeo({
   title = 'CaballoAzteca - Periodismo Independiente',
-  description = 'Luchando por la libre prensa y ña soberania en México y Quintana Roo.',
-  image = 'aztech.png',
+  description = 'Luchando por la libre prensa y la soberania en México y Quintana Roo.',
+  image = '/aztech.png',
   url = '',
   type = 'website'
 }: SeoOptions = {}) {

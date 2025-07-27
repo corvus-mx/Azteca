@@ -6,22 +6,23 @@ import { getSeo } from "../utils/seo";
 import "../styles/global.css";
 import "../styles/variables.css";
 
-const { title, description, ogImage, url } = Astro.props;
-const seo = getSeo({ title, description, ogImage, url });
+const { title, description, image, url } = Astro.props;
+const seo = getSeo({ title, description, image, url });
 ---
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <title>{seo.title}</title>
-    <meta name="description" content={seo.description} />
-    <meta property="og:title" content={seo.ogTitle} />
-    <meta property="og:description" content={seo.ogDescription} />
-    <meta property="og:image" content={seo.ogImage} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={seo.url} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/global.css/" />
-    <link rel="stylesheet" href="/src/styles/variables.css/" />
+    <meta name="theme-color" content="#000" />
+
+    <!-- Seo meta -->
+    {seo.meta.map(tag => (
+      <meta {...tag} />
+    ))}
+
+    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="stylesheet" href="/src/styles/variables.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
