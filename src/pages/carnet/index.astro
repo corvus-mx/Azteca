@@ -1,1 +1,140 @@
 ---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Grid from "../../components/Grid.astro";
+import SeriesCard from "../../components/SeriesCard.astro";
+import { getAllSeries } from "../../utils/content.ts";
+const series = await getAllSeries();
+---
+<BaseLayout title="Series" description="Todas las series de investigación periodística independientes en Quintana Roo y México.">
+
+  <!-- BLOQUE DESTACADO CON CONTADOR -->
+  <section style="background:#f9f9f9; border-bottom:1px solid #ddd; padding:2rem 1rem; text-align:center; margin-bottom:2rem;">
+    <h2 id="counter" style="font-size:2.5rem; margin-bottom:0.5rem; font-weight:bold; color:#222;">
+      +0 Carnets entregados en todo México
+    </h2>
+    <p style="font-size:1.1rem; max-width:750px; margin:0 auto 1.5rem auto; color:#444; line-height:1.6;">
+      Cada nuevo portador fortalece el anonimato colectivo y protege a quienes realizan investigaciones de alto riesgo o filtraciones. 
+      Este carnet es una herramienta de protección y solidaridad entre periodistas.
+    </p>
+    <a 
+      href="mailto:contacto@caballoazteca.org?subject=Solicitud%20de%20carnet%20de%20prensa" 
+      id="btn-solicitar"
+      style="background:#222; color:#fff; padding:0.8rem 2rem; text-decoration:none; border-radius:4px; font-weight:bold; display:inline-block; font-size:1rem;"
+    >
+      Solicitar carnet
+    </a>
+  </section>
+
+  <!-- BLOQUE DE ESTADÍSTICAS -->
+  <section style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; padding:1.5rem 1rem; text-align:center; border-bottom:1px solid #ddd; margin-bottom:2rem;">
+    <div style="flex:1 1 120px; min-width:120px;">
+      <h3 style="font-size:2rem; margin-bottom:0.3rem; color:#222;">80%</h3>
+      <p style="margin:0; font-size:1rem; color:#444;">Periodistas independientes</p>
+    </div>
+    <div style="flex:1 1 120px; min-width:120px;">
+      <h3 style="font-size:2rem; margin-bottom:0.3rem; color:#222;">72h</h3>
+      <p style="margin:0; font-size:1rem; color:#444;">Tiempo promedio de entrega</p>
+    </div>
+    <div style="flex:1 1 120px; min-width:120px;">
+      <h3 style="font-size:2rem; margin-bottom:0.3rem; color:#222;">500+</h3>
+      <p style="margin:0; font-size:1rem; color:#444;">Carnets activos en México</p>
+    </div>
+  </section>
+
+  <p>
+    Hemos desarrollado un sistema de <strong>carnet de prensa colectivo y anónimo</strong> inspirado en el concepto de 
+    <strong>anonimato de rebaño</strong>, el mismo principio que se utiliza en redes como Tor: mientras más personas lo usan, 
+    más difícil es identificar o aislar a un periodista en específico.
+  </p>
+
+  <p>
+    Actualmente ya hemos entregado <strong>más de 500 carnets en todo México</strong>, logrando que cada periodista o colaborador 
+    acreditado se diluya en una red amplia y sólida. Esto significa que <strong>nadie puede saber quién está detrás de una investigación 
+    sensible</strong>, y cualquier intento de hostigamiento repercutiría en todo el colectivo.
+  </p>
+
+  <p>
+    El carnet se emite en <strong>inglés</strong> por una razón estratégica: aunque estamos abiertamente en contra de la gentrificación 
+    y sus consecuencias sociales, <strong>no podemos ignorar que un documento internacional facilita la entrada a más lugares y aumenta 
+    la protección del portador</strong>. Este detalle, aunque contradictorio, es parte de la estrategia para que cualquier periodista 
+    tenga la mayor cobertura posible.
+  </p>
+
+  <p>
+    <strong>Motivamos a periodistas independientes y también a quienes pertenecen a empresas privadas a portar el carnet</strong>, aunque no lo necesiten 
+    directamente para su trabajo. Cada persona que lo usa contribuye a <strong>fortalecer el anonimato colectivo</strong> y proteger a quienes están investigando 
+    temas de alto riesgo o filtraciones que el poder busca silenciar.
+  </p>
+
+  <h4>Proceso de solicitud:</h4>
+  <ul>
+    <li>Enviar un <strong>correo con su CV</strong> (los datos personales son opcionales). 
+      <strong>Recomendamos usar cifrado PGP</strong> para proteger su información. 
+      <a href="/series/guia-pgp/">Ver guía rápida de PGP</a>.
+    </li>
+    <li>Incluir <strong>su motivación</strong> para portar el carnet.</li>
+    <li>Indicar el <strong>puesto</strong>: Reportero, Periodista de investigación o Fotógrafo/Videógrafo.</li>
+    <li>Si se quiere con <strong>nombre y fecha de nacimiento</strong>, los datos se eliminan tras que una IA genere el carnet.</li>
+    <li>El carnet se entrega <strong>en un máximo de 72 horas</strong> en formato digital, listo para sublimar o imprimir.</li>
+  </ul>
+
+  <h4>Riesgos que evitamos:</h4>
+  <ul>
+    <li>Las organizaciones tradicionales de prensa suelen pedir <strong>datos personales extensos</strong> (INE, domicilio, teléfonos, RFC, pasaportes) 
+    que terminan en bases centralizadas vulnerables. El crimen organizado compra estas bases o soborna a empleados para obtener información.</li>
+    <li>En los eventos oficiales, las listas de acceso registran nombres reales. Esto se puede cruzar con bases de datos para perfilar y ubicar periodistas 
+    que cubren temas delicados.</li>
+  </ul>
+
+  <h4>Cómo protegemos a los periodistas:</h4>
+  <ul>
+    <li>Nuestro carnet <strong>no guarda datos sensibles</strong>, solo un ID único (ej: CA-9X7Q-13AM-77SD-42).</li>
+    <li>Si el periodista asiste a un evento, queda registrado el <strong>ID</strong>, no su nombre real.</li>
+    <li>Incluso si alguien obtiene esa base de datos, <strong>no puede vincular los IDs a identidades reales</strong>.</li>
+    <li>El carnet está validado a través de un <strong>sistema seguro con QR</strong>, pero la verificación solo muestra “Periodista acreditado”, nunca datos personales.</li>
+  </ul>
+
+  <p>
+    Con este modelo, <strong>los periodistas de investigación, filtraciones o coberturas incómodas para el poder</strong> están mucho más protegidos. 
+    Además, cada nuevo portador fortalece al colectivo entero: es imposible saber quién investiga qué, y atacar a uno sería atacar a todos.
+  </p>
+
+  <h3 style="margin-top:3rem;">Series de investigación</h3>
+  <Grid>
+    {series.map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
+  </Grid>
+
+  <style>
+    /* BOTÓN FIJO EN MÓVILES */
+    @media (max-width: 768px) {
+      #btn-solicitar {
+        position: fixed;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+        width: 90%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script>
+    // CONTADOR DINÁMICO ANIMADO
+    const counterEl = document.getElementById('counter');
+    let current = 0;
+    const target = 500;
+    const increment = Math.ceil(target / 80);
+
+    const animateCounter = () => {
+      if (current < target) {
+        current += increment;
+        counterEl.textContent = `+${current} Carnets entregados en todo México`;
+        requestAnimationFrame(animateCounter);
+      } else {
+        counterEl.textContent = `+${target} Carnets entregados en todo México`;
+      }
+    };
+    window.addEventListener('DOMContentLoaded', animateCounter);
+  </script>
+</BaseLayout>
