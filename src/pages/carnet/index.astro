@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Grid from "../../components/Grid.astro";
-import Grid from "../../components/Hero.astro";
 import SeriesCard from "../../components/SeriesCard.astro";
 import { getAllSeries } from "../../utils/content";
 
@@ -9,10 +8,6 @@ const series = await getAllSeries();
 ---
 
 <BaseLayout title="Inicio" description="Colectivo de periodismo independiente que investiga lo que el gobierno no pudo y los medios callaron.">
-<Hero 
-    title="Defender la soberanía y bienestar de México y Quintana Roo"
-    subtitle="Periodismo de investigación independiente, transparencia y denuncia. Reportajes, series y filtraciones sobre crimen, corrupción y poder."
-  />
   <section class="home-container">
     <h1>Caballo Azteca: La verdad nos pertenece a todos</h1>
     <p>
