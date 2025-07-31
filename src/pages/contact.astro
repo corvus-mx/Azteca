@@ -42,6 +42,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </a>
     </details>
 
+    <!-- NUEVA SECCIÓN COLABOREMOS -->
+    <h2>🤝 Colaboremos</h2>
+    <p>
+      <strong>Caballo Azteca es una plataforma independiente, pero no la dirige una sola persona: la dirigimos todos.</strong>  
+      Nuestro propósito es ser un espacio seguro y colectivo para investigar, documentar y publicar lo que otros quieren silenciar.
+    </p>
+    <p>
+      Si eres periodista, fotógrafo, videógrafo, editor o simplemente una persona dispuesta a colaborar en cualquier área, eres bienvenido/a.  
+      Puedes investigar, escribir, documentar o incluso apoyarnos compartiendo el trabajo que hacemos.
+    </p>
+    <p>
+      Si necesitas cubrir un suceso y requieres acreditación, puedes solicitar el <strong>carnet de prensa de Caballo Azteca</strong> de forma gratuita.  
+      Solo pedimos tu motivación y el rol que desempeñarás.  
+      <a href="/carnet" class="button-link">Solicitar carnet →</a>
+    </p>
+
     <h2>🔐 Recomendaciones básicas para protegerte</h2>
     <ul>
       <li>Usa dispositivos y correos distintos a los que usas a diario</li>
@@ -52,7 +68,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </ul>
 
     <p style="margin-top:2em;text-align:center;">
-      <a href="/" class="button">Volver al inicio</a>
+      <a href="/" class="button-link">Volver al inicio</a>
     </p>
   </section>
 
@@ -69,13 +85,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1.5rem;
+      text-align: center;
     }
 
     .secure-contact h2 {
       font-size: 1.3rem;
       font-weight: 600;
       margin-top: 2rem;
-      color: var(--color-accent);
+      color: var(--color-accent, #0070f3);
     }
 
     .secure-contact p {
@@ -111,13 +128,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       cursor: pointer;
       font-weight: 600;
       margin-top: 1rem;
-      color: var(--color-text-primary);
+      color: var(--color-text-primary, #222);
     }
 
     details p,
     details ul {
       margin-top: 1rem;
       padding-left: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .secure-contact {
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
+      }
+      .secure-contact h1 {
+        font-size: 1.6rem;
+      }
+      .secure-contact h2 {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </BaseLayout>
