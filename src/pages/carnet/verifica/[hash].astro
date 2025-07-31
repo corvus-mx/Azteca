@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
-// 🔹 Lista de carnets válidos (DEBE ir dentro del bloque ---)
+// 🔹 Definir la lista ANTES de getStaticPaths
 const carnetsValidos = [
   {
     hash: "CA-9X7Q-13AM-77SD-42",
@@ -19,17 +19,17 @@ const carnetsValidos = [
   }
 ];
 
-// 🔹 Generar páginas estáticas por cada carnet
+// 🔹 Astro generará una página por cada carnet válido
 export function getStaticPaths() {
   return carnetsValidos.map((c) => ({
     params: { hash: c.hash }
   }));
 }
 
-// 🔹 Obtener hash desde la URL
+// 🔹 Tomar el parámetro hash de la URL
 const { hash } = Astro.params;
 
-// 🔹 Buscar el carnet
+// 🔹 Buscar el carnet en la lista
 const carnet = carnetsValidos.find((c) => c.hash === hash);
 ---
 
