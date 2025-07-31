@@ -8,104 +8,171 @@ import { getAllSeries } from "../utils/content.ts";
 const series = await getAllSeries();
 ---
 
-<BaseLayout title="Inicio" description="Periodismo investigativo y filtraciones en Quintana Roo y México.">
+<BaseLayout title="Inicio" description="Colectivo de periodismo independiente que investiga lo que el gobierno no pudo y los medios callaron.">
+  <!-- HERO -->
   <Hero 
-    title="Defender la soberanía y bienestar de México y Quintana Roo"
-    subtitle="Periodismo de investigación independiente, transparencia y denuncia. Reportajes, series y filtraciones sobre crimen, corrupción y poder."
+    title="Caballo Azteca: La verdad nos pertenece a todos"
+    subtitle="Somos una red de periodistas e investigadores independientes. Queremos ayudar a resolver lo que el gobierno no pudo y hacer público lo que los medios callaron."
   />
 
-  <section>
-    <h2 class="section-title">Series recientes</h2>
+
+  <!-- SOBRE CABALLO AZTECA -->
+  <section class="home-container">
+    <p>
+      <strong>Caballo Azteca es un colectivo sin fines de lucro</strong> que investiga los casos que las autoridades han ignorado o no han podido resolver. Nuestro propósito es hacer visibles los hechos que los grandes medios callaron por presión política, intereses económicos o miedo.  
+      <br /><br />
+      Cualquier persona puede <strong>denunciar o solicitar una investigación</strong>. Verificamos la información con rigurosidad y si es verídica y relevante para el interés público, la hacemos visible.  
+      <br /><br />
+      También puedes <strong>colaborar con nosotros</strong> investigando, documentando o difundiendo el trabajo. Caballo Azteca no lo dirige una sola persona: <strong>somos muchos, actuando como uno solo</strong>.
+    </p>
+    <div class="home-buttons">
+      <a href="/contact" class="button-link">Denunciar o solicitar investigación</a>
+      <a href="/carnet" class="button-link secondary">Colaborar con nosotros</a>
+    </div>
+  </section>
+
+  <!-- ¿CÓMO FUNCIONA? -->
+  <section class="home-container">
+    <h2>¿Cómo funciona Caballo Azteca?</h2>
+    <ul>
+      <li>
+        <strong>1️⃣ Denuncia o solicita una investigación:</strong> Recibimos denuncias y solicitudes sobre casos graves de corrupción, abusos de poder, crimen organizado o cualquier hecho que las autoridades no han querido o no han podido investigar. Toda la información se recibe a través de <strong>canales seguros y cifrados</strong>.
+      </li>
+      <li>
+        <strong>2️⃣ Verificamos la información:</strong> Nuestro equipo periodístico analiza cada caso con rigurosidad: revisamos documentos, corroboramos fuentes y buscamos más evidencias. Si la información es falsa o carece de sustento, se descarta. Si es sólida, continúa.
+      </li>
+      <li>
+        <strong>3️⃣ Decidimos juntos si se publica:</strong> Si la información es verídica y tiene interés público, la publicamos. También respetamos los casos que prefieren mantenerse privados o en fase de investigación. Nuestro objetivo no es la inmediatez: es la verdad.
+      </li>
+    </ul>
+  </section>
+
+  <!-- SERIES RECIENTES -->
+  <section class="home-container">
+    <h2>Series recientes</h2>
     <Grid>
       {series.slice(0, 3).map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
     </Grid>
   </section>
 
-  <section class="cta-section">
-    <a href="/contacto-seguro" class="button">Filtra información o denuncia aquí</a>
-  </section>
 
-  <section class="cta-section">
-    <a href="/carnet" class="button secondary">Colabora con nosotros</a>
-  </section>
-
-  <section class="about">
+  <!-- SEGURIDAD Y TRANSPARENCIA -->
+  <section class="home-container">
+    <h2>Seguridad y transparencia</h2>
     <p>
-      <strong>Caballo Azteca es una red de periodistas e investigadores independientes.</strong>  
-      Investigamos lo que el gobierno no ha querido o no ha podido investigar y hacemos público lo que los grandes medios callaron.  
-      Nos mantenemos exclusivamente de <strong>donaciones</strong> para conservar nuestra independencia.
+      Protegemos a quienes denuncian y colaboran. Usamos <strong>cifrado PGP y canales seguros</strong> para recibir información. No almacenamos datos innecesarios ni revelamos identidades.  
+      <br /><br />
+      Caballo Azteca no pide confianza: <strong>la construye protegiendo cada caso</strong>. No respondemos a intereses políticos o económicos: respondemos solo a la verdad.
     </p>
-    <a href="/donar" class="button">Apóyanos con una donación</a>
+    <p style="text-align:center; margin-top:2rem;">
+      <a href="/contact" class="button-link secondary">Leer más sobre contacto seguro</a>
+    </p>
   </section>
 
   <style>
-    /* Título de secciones */
-    .section-title {
-      font-size: 1.4rem;
+    .home-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .cta-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .home-container h2 {
+      font-size: 1.3rem;
       font-weight: 600;
-      text-align: center;
-      margin: 2rem 0 1.5rem 0;
-    }
-
-    /* Secciones de CTA (botones centrados) */
-    .cta-section {
-      margin-top: 2.5em;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--color-accent, #0070f3);
       text-align: center;
     }
 
-    /* Sección about */
-    .about {
-      margin: 2.5em auto;
-      text-align: center;
-      max-width: 700px;
-      padding: 0 1rem;
-      line-height: 1.6;
+    .home-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
     }
 
-    .about p {
+    ul.articulos {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.articulos li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
       font-size: 1rem;
-      margin-bottom: 1.5rem;
     }
 
-    /* Botones */
-    .button {
+    ul.articulos li a {
+      text-decoration: none;
+      color: var(--color-text-primary, #222);
+      font-weight: 500;
+    }
+
+    .button-link {
       display: inline-block;
-      font-size: 1.1em;
-      padding: 0.8em 2em;
+      padding: 0.7rem 1.4rem;
+      background: #0070f3;
+      color: white;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
-      background: #0070f3;
-      color: #fff;
       transition: background 0.3s ease;
     }
 
-    .button:hover {
+    .button-link:hover {
       background: #005fc1;
     }
 
-    .button.secondary {
+    .button-link.secondary {
       background: #222;
     }
 
-    .button.secondary:hover {
-      background: #444;
-    }
-
-    /* Responsive */
     @media (max-width: 600px) {
-      .section-title {
-        font-size: 1.2rem;
+      .home-container {
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
       }
 
-      .button {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
+      .home-container h2 {
+        font-size: 1.1rem;
       }
 
-      .about p {
-        font-size: 0.95rem;
+      .cta-buttons, .home-buttons {
+        flex-direction: column;
+      }
+
+      .button-link {
+        width: 100%;
+        text-align: center;
+      }
+
+      ul.articulos li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      ul.articulos li span {
+        font-size: 0.9rem;
+        color: #666;
       }
     }
   </style>
