@@ -9,5 +9,8 @@ export default defineConfig({
         "@": new URL("./src", import.meta.url).pathname
       }
     }
+  },
+    build: {
+    format: 'file', // genera .html en lugar de carpetas index.html
   }
 });
