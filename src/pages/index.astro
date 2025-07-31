@@ -3,149 +3,109 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 import SeriesCard from "../components/SeriesCard.astro";
-import { getAllSeries } from "../utils/content";
+import { getAllSeries } from "../utils/content.ts";
 
 const series = await getAllSeries();
 ---
 
 <BaseLayout title="Inicio" description="Periodismo investigativo y filtraciones en Quintana Roo y México.">
-  <section class="home-container">
-    <h1>Caballo Azteca: La verdad nos pertenece a todos</h1>
-    <p>
-      <strong>Caballo Azteca es una red de periodistas e investigadores independientes</strong> que busca ayudar a resolver lo que el gobierno no pudo y hacer público lo que los grandes medios callaron.  
-      <br /><br />
-      Somos un <strong>colectivo sin fines de lucro</strong> que investiga los casos que las autoridades han ignorado o no han podido resolver. Nuestro propósito es hacer visibles los hechos que afectan a México y que muchas veces son silenciados por presión política o intereses económicos.  
-      <br /><br />
-      Cualquier persona puede <strong>denunciar o solicitar una investigación</strong>. Verificamos cada caso con rigurosidad y, si es verídico y relevante para el interés público, lo hacemos visible.  
-      <br /><br />
-      También puedes <strong>colaborar con nosotros</strong> investigando, documentando o difundiendo el trabajo. Caballo Azteca no lo dirige una sola persona: <strong>somos muchos, actuando como uno solo</strong>.
-    </p>
+  <Hero 
+    title="Defender la soberanía y bienestar de México y Quintana Roo"
+    subtitle="Periodismo de investigación independiente, transparencia y denuncia. Reportajes, series y filtraciones sobre crimen, corrupción y poder."
+  />
 
-    <div class="home-buttons">
-      <a href="/contacto-seguro" class="button-link">Denunciar o solicitar investigación</a>
-      <a href="/carnet" class="button-link secondary">Colaborar con nosotros</a>
-    </div>
-
-    <h2>¿Cómo funciona Caballo Azteca?</h2>
-    <ul>
-      <li>
-        <strong>1️⃣ Denuncia o solicita una investigación:</strong> Recibimos denuncias y solicitudes sobre casos graves de corrupción, abusos de poder, crimen organizado o cualquier hecho que las autoridades no han querido o no han podido investigar. Toda la información se recibe a través de canales seguros y cifrados.
-      </li>
-      <li>
-        <strong>2️⃣ Verificamos la información:</strong> Nuestro equipo periodístico analiza cada caso con rigurosidad. Revisamos documentos, corroboramos fuentes y buscamos más evidencias antes de avanzar.
-      </li>
-      <li>
-        <strong>3️⃣ Decidimos juntos si se publica:</strong> Si la información es verídica y tiene interés público, la publicamos. También respetamos los casos que prefieren mantenerse privados. Nuestro objetivo no es la inmediatez: es la verdad.
-      </li>
-    </ul>
-  </section>
-
-  <section class="home-container">
-    <h2>Series recientes</h2>
+  <section>
+    <h2 class="section-title">Series recientes</h2>
     <Grid>
       {series.slice(0, 3).map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
     </Grid>
   </section>
 
-  <section class="home-container">
-    <h2>Seguridad y transparencia</h2>
+  <section class="cta-section">
+    <a href="/contacto-seguro" class="button">Filtra información o denuncia aquí</a>
+  </section>
+
+  <section class="cta-section">
+    <a href="/carnet" class="button secondary">Colabora con nosotros</a>
+  </section>
+
+  <section class="about">
     <p>
-      Protegemos a quienes denuncian y colaboran. Usamos <strong>cifrado PGP y canales seguros</strong> para recibir información.  
-      No almacenamos datos innecesarios ni revelamos identidades.  
-      <br /><br />
-      Caballo Azteca no pide confianza: <strong>la construye protegiendo cada caso</strong>. No respondemos a intereses políticos o económicos: respondemos solo a la verdad.
+      <strong>Caballo Azteca es una red de periodistas e investigadores independientes.</strong>  
+      Investigamos lo que el gobierno no ha querido o no ha podido investigar y hacemos público lo que los grandes medios callaron.  
+      Nos mantenemos exclusivamente de <strong>donaciones</strong> para conservar nuestra independencia.
     </p>
-    <p style="text-align:center; margin-top:2rem;">
-      <a href="/contacto-seguro" class="button-link secondary">Leer más sobre contacto seguro</a>
-    </p>
+    <a href="/donar" class="button">Apóyanos con una donación</a>
   </section>
 
   <style>
-    .home-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      font-size: 1.05rem;
-      line-height: 1.7;
-    }
-
-    .home-container h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-
-    .home-container h2 {
-      font-size: 1.3rem;
+    /* Título de secciones */
+    .section-title {
+      font-size: 1.4rem;
       font-weight: 600;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      color: var(--color-accent, #0070f3);
+      text-align: center;
+      margin: 2rem 0 1.5rem 0;
+    }
+
+    /* Secciones de CTA (botones centrados) */
+    .cta-section {
+      margin-top: 2.5em;
       text-align: center;
     }
 
-    .home-container p {
-      margin-bottom: 1rem;
+    /* Sección about */
+    .about {
+      margin: 2.5em auto;
+      text-align: center;
+      max-width: 700px;
+      padding: 0 1rem;
+      line-height: 1.6;
     }
 
-    .home-container ul {
-      margin-top: 0.5rem;
-      padding-left: 1.2rem;
+    .about p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
     }
 
-    .home-container li {
-      margin-bottom: 0.8rem;
-    }
-
-    .home-buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 2rem 0;
-    }
-
-    .button-link {
+    /* Botones */
+    .button {
       display: inline-block;
-      padding: 0.6rem 1.2rem;
-      background: #0070f3;
-      color: white;
+      font-size: 1.1em;
+      padding: 0.8em 2em;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
+      background: #0070f3;
+      color: #fff;
       transition: background 0.3s ease;
     }
 
-    .button-link:hover {
+    .button:hover {
       background: #005fc1;
     }
 
-    .button-link.secondary {
+    .button.secondary {
       background: #222;
     }
 
+    .button.secondary:hover {
+      background: #444;
+    }
+
+    /* Responsive */
     @media (max-width: 600px) {
-      .home-container {
-        padding: 1.5rem 1rem;
-        font-size: 1rem;
+      .section-title {
+        font-size: 1.2rem;
       }
 
-      .home-container h1 {
-        font-size: 1.6rem;
+      .button {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
       }
 
-      .home-container h2 {
-        font-size: 1.1rem;
-      }
-
-      .home-buttons {
-        flex-direction: column;
-      }
-
-      .button-link {
-        width: 100%;
-        text-align: center;
+      .about p {
+        font-size: 0.95rem;
       }
     }
   </style>
