@@ -9,16 +9,70 @@ const series = await getAllSeries();
 ---
 <BaseLayout title="Inicio" description="Periodismo investigativo y filtraciones en Quintana Roo y México.">
   <Hero 
-    title="Defendamos la libre prensa en la Q.Roo y Mexico"
-    subtitle="Periodismo de investigación comprometido con la verdad, abierto a denuncias y filtraciones anónimas."
+    title="Caballo Azteca: La verdad nos pertenece a todos"
+    subtitle="Somos una red de periodistas e investigadores independientes. Queremos ayudar a resolver lo que el gobierno no pudo y hacer público lo que los medios callaron."
   />
-  <section>
+
+  <section style="text-align:center; padding:2rem 1rem;">
+    <p style="max-width:800px; margin:0 auto; font-size:1.1rem; line-height:1.7;">
+      Caballo Azteca es un <strong>colectivo sin fines de lucro</strong> que investiga los casos que las autoridades han ignorado o no han podido resolver.  
+      Nuestro propósito es hacer visibles los hechos que los grandes medios callaron por presión política, intereses económicos o miedo.  
+      <br/><br/>
+      Cualquier persona puede <strong>denunciar o solicitar una investigación</strong>.  
+      Verificamos la información con rigurosidad y si es verídica y relevante para el interés público, la hacemos visible.  
+      <br/><br/>
+      También puedes <strong>colaborar con nosotros</strong> investigando, documentando o difundiendo el trabajo. Caballo Azteca no lo dirige una sola persona: <strong>somos muchos, actuando como uno solo</strong>.
+    </p>
+    <div style="margin-top:2rem; display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+      <a href="/contacto-seguro" class="button" style="padding:0.8em 2em;">Denunciar o solicitar investigación</a>
+      <a href="/carnet" class="button secondary" style="padding:0.8em 2em;">Colaborar con nosotros</a>
+    </div>
+  </section>
+
+  <section style="padding:2rem 1rem; background:#f9f9f9; border-top:1px solid #ddd; border-bottom:1px solid #ddd;">
+    <h2 style="text-align:center; margin-bottom:1rem;">¿Cómo funciona Caballo Azteca?</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2rem; max-width:1000px; margin:0 auto;">
+      <div>
+        <h3 style="color:#0070f3; font-size:1.2rem;">1️⃣ Denuncia o solicita una investigación</h3>
+        <p>
+          Recibimos denuncias y solicitudes sobre casos graves de corrupción, abusos de poder, crimen organizado o cualquier hecho que las autoridades no han querido o no han podido investigar.  
+          Toda la información se recibe a través de <strong>canales seguros y cifrados</strong>.
+        </p>
+      </div>
+      <div>
+        <h3 style="color:#0070f3; font-size:1.2rem;">2️⃣ Verificamos la información</h3>
+        <p>
+          Nuestro equipo periodístico analiza cada caso con rigurosidad: revisamos documentos, corroboramos fuentes y buscamos más evidencias.  
+          Si la información es falsa o carece de sustento, se descarta. Si es sólida, continúa.
+        </p>
+      </div>
+      <div>
+        <h3 style="color:#0070f3; font-size:1.2rem;">3️⃣ Decidimos juntos si se publica</h3>
+        <p>
+          Si la información es verídica y tiene interés público, la publicamos.  
+          También respetamos los casos que prefieren mantenerse privados o en fase de investigación. Nuestro objetivo no es la inmediatez: es la verdad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:2rem 1rem;">
     <h2 class="section-title">Series recientes</h2>
     <Grid>
       {series.slice(0, 3).map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
     </Grid>
   </section>
-  <section style="margin-top:2.5em;text-align:center;">
-    <a href="/contact" class="button" style="font-size:1.1em;padding:0.8em 2em;">Filtra información o denuncia aquí</a>
+
+  <section style="padding:2rem 1rem; background:#f9f9f9;">
+    <h2 style="text-align:center; margin-bottom:1rem;">Seguridad y transparencia</h2>
+    <p style="max-width:800px; margin:0 auto; text-align:center; font-size:1.05rem; line-height:1.7;">
+      Protegemos a quienes denuncian y colaboran. Usamos <strong>cifrado PGP y canales seguros</strong> para recibir información.  
+      No almacenamos datos innecesarios ni revelamos identidades.  
+      <br/><br/>
+      Caballo Azteca no pide confianza: <strong>la construye protegiendo cada caso</strong>. No respondemos a intereses políticos o económicos: respondemos solo a la verdad.
+    </p>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="/contacto-seguro" class="button secondary" style="padding:0.8em 2em;">Leer más sobre contacto seguro</a>
+    </div>
   </section>
 </BaseLayout>
