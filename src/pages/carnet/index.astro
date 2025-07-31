@@ -1,140 +1,156 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
-import Grid from "../../components/Grid.astro";
-import SeriesCard from "../../components/SeriesCard.astro";
-import { getAllSeries } from "../../utils/content.ts";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Grid from "../components/Grid.astro";
+import SeriesCard from "../components/SeriesCard.astro";
+import { getAllSeries } from "../utils/content";
+
 const series = await getAllSeries();
 ---
-<BaseLayout title="Series" description="Todas las series de investigación periodística independientes en Quintana Roo y México.">
 
-  <!-- BLOQUE DESTACADO CON CONTADOR -->
-  <section style="background:#f9f9f9; border-bottom:1px solid #ddd; padding:2rem 1rem; text-align:center; margin-bottom:2rem;">
-    <h2 id="counter" style="font-size:2.5rem; margin-bottom:0.5rem; font-weight:bold; color:#222;">
-      +0 Carnets entregados en todo México
-    </h2>
-    <p style="font-size:1.1rem; max-width:750px; margin:0 auto 1.5rem auto; color:#444; line-height:1.6;">
-      Cada nuevo portador fortalece el anonimato colectivo y protege a quienes realizan investigaciones de alto riesgo o filtraciones. 
-      Este carnet es una herramienta de protección y solidaridad entre periodistas.
+<BaseLayout title="Inicio" description="Colectivo de periodismo independiente que investiga lo que el gobierno no pudo y los medios callaron.">
+  <section class="home-container">
+    <h1>Caballo Azteca: La verdad nos pertenece a todos</h1>
+    <p>
+      <strong>Caballo Azteca es una red de periodistas e investigadores independientes</strong> dedicada a exponer los hechos que las autoridades han ignorado o no han podido resolver, y a hacer públicos los casos que los grandes medios decidieron callar.  
+      <br /><br />
+      Somos un <strong>colectivo sin fines de lucro</strong> con una misión clara: investigar con rigor, verificar cada dato y garantizar que la verdad llegue a la sociedad.  
+      <br /><br />
+      Cualquier persona puede <strong>denunciar o solicitar una investigación</strong>. Cada caso es recibido por canales seguros, analizado a fondo y, si es verídico y relevante para el interés público, se hace visible.  
+      <br /><br />
+      También puedes <strong>colaborar con nosotros</strong> investigando, documentando, verificando o difundiendo el trabajo. Caballo Azteca no lo dirige una sola persona: <strong>somos muchos, actuando como uno solo</strong>.
     </p>
-    <a 
-      href="mailto:contacto@caballoazteca.org?subject=Solicitud%20de%20carnet%20de%20prensa" 
-      id="btn-solicitar"
-      style="background:#222; color:#fff; padding:0.8rem 2rem; text-decoration:none; border-radius:4px; font-weight:bold; display:inline-block; font-size:1rem;"
-    >
-      Solicitar carnet
-    </a>
-  </section>
 
-  <!-- BLOQUE DE ESTADÍSTICAS -->
-  <section style="display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; padding:1.5rem 1rem; text-align:center; border-bottom:1px solid #ddd; margin-bottom:2rem;">
-    <div style="flex:1 1 120px; min-width:120px;">
-      <h3 style="font-size:2rem; margin-bottom:0.3rem; color:#222;">80%</h3>
-      <p style="margin:0; font-size:1rem; color:#444;">Periodistas independientes</p>
-    </div>
-    <div style="flex:1 1 120px; min-width:120px;">
-      <h3 style="font-size:2rem; margin-bottom:0.3rem; color:#222;">72h</h3>
-      <p style="margin:0; font-size:1rem; color:#444;">Tiempo promedio de entrega</p>
-    </div>
-    <div style="flex:1 1 120px; min-width:120px;">
-      <h3 style="font-size:2rem; margin-bottom:0.3rem; color:#222;">500+</h3>
-      <p style="margin:0; font-size:1rem; color:#444;">Carnets activos en México</p>
+    <div class="home-buttons">
+      <a href="/contacto-seguro" class="button-link">Denunciar o solicitar investigación</a>
+      <a href="/carnet" class="button-link secondary">Colaborar con nosotros</a>
     </div>
   </section>
 
-  <p>
-    Hemos desarrollado un sistema de <strong>carnet de prensa colectivo y anónimo</strong> inspirado en el concepto de 
-    <strong>anonimato de rebaño</strong>, el mismo principio que se utiliza en redes como Tor: mientras más personas lo usan, 
-    más difícil es identificar o aislar a un periodista en específico.
-  </p>
+  <section class="home-container">
+    <h2>¿Cómo funciona Caballo Azteca?</h2>
+    <ul>
+      <li>
+        <strong>1️⃣ Denuncia o solicita una investigación:</strong> Recibimos denuncias y solicitudes sobre casos graves de corrupción, abusos de poder, crimen organizado o cualquier hecho que las autoridades no han querido o no han podido investigar. Toda la información se recibe a través de <strong>canales seguros y cifrados</strong>.
+      </li>
+      <li>
+        <strong>2️⃣ Verificamos la información:</strong> Nuestro equipo analiza cada caso con rigor periodístico. Corroboramos fuentes, revisamos documentos y buscamos pruebas sólidas antes de avanzar.
+      </li>
+      <li>
+        <strong>3️⃣ Decidimos juntos si se publica:</strong> Si la información es verídica y tiene interés público, se hace visible. También respetamos los casos que prefieren mantenerse en privado o en fase de investigación. Nuestro compromiso no es con la inmediatez, sino con la verdad.
+      </li>
+    </ul>
+  </section>
 
-  <p>
-    Actualmente ya hemos entregado <strong>más de 500 carnets en todo México</strong>, logrando que cada periodista o colaborador 
-    acreditado se diluya en una red amplia y sólida. Esto significa que <strong>nadie puede saber quién está detrás de una investigación 
-    sensible</strong>, y cualquier intento de hostigamiento repercutiría en todo el colectivo.
-  </p>
+  <section class="home-container">
+    <h2>Series recientes</h2>
+    <Grid>
+      {series.slice(0, 3).map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
+    </Grid>
+  </section>
 
-  <p>
-    El carnet se emite en <strong>inglés</strong> por una razón estratégica: aunque estamos abiertamente en contra de la gentrificación 
-    y sus consecuencias sociales, <strong>no podemos ignorar que un documento internacional facilita la entrada a más lugares y aumenta 
-    la protección del portador</strong>. Este detalle, aunque contradictorio, es parte de la estrategia para que cualquier periodista 
-    tenga la mayor cobertura posible.
-  </p>
-
-  <p>
-    <strong>Motivamos a periodistas independientes y también a quienes pertenecen a empresas privadas a portar el carnet</strong>, aunque no lo necesiten 
-    directamente para su trabajo. Cada persona que lo usa contribuye a <strong>fortalecer el anonimato colectivo</strong> y proteger a quienes están investigando 
-    temas de alto riesgo o filtraciones que el poder busca silenciar.
-  </p>
-
-  <h4>Proceso de solicitud:</h4>
-  <ul>
-    <li>Enviar un <strong>correo con su CV</strong> (los datos personales son opcionales). 
-      <strong>Recomendamos usar cifrado PGP</strong> para proteger su información. 
-      <a href="/series/guia-pgp/">Ver guía rápida de PGP</a>.
-    </li>
-    <li>Incluir <strong>su motivación</strong> para portar el carnet.</li>
-    <li>Indicar el <strong>puesto</strong>: Reportero, Periodista de investigación o Fotógrafo/Videógrafo.</li>
-    <li>Si se quiere con <strong>nombre y fecha de nacimiento</strong>, los datos se eliminan tras que una IA genere el carnet.</li>
-    <li>El carnet se entrega <strong>en un máximo de 72 horas</strong> en formato digital, listo para sublimar o imprimir.</li>
-  </ul>
-
-  <h4>Riesgos que evitamos:</h4>
-  <ul>
-    <li>Las organizaciones tradicionales de prensa suelen pedir <strong>datos personales extensos</strong> (INE, domicilio, teléfonos, RFC, pasaportes) 
-    que terminan en bases centralizadas vulnerables. El crimen organizado compra estas bases o soborna a empleados para obtener información.</li>
-    <li>En los eventos oficiales, las listas de acceso registran nombres reales. Esto se puede cruzar con bases de datos para perfilar y ubicar periodistas 
-    que cubren temas delicados.</li>
-  </ul>
-
-  <h4>Cómo protegemos a los periodistas:</h4>
-  <ul>
-    <li>Nuestro carnet <strong>no guarda datos sensibles</strong>, solo un ID único (ej: CA-7LMR-28BX-64QZ-91).</li>
-    <li>Si el periodista asiste a un evento, queda registrado el <strong>ID</strong>, no su nombre real.</li>
-    <li>Incluso si alguien obtiene esa base de datos, <strong>no puede vincular los IDs a identidades reales</strong>.</li>
-    <li>El carnet está validado a través de un <strong>sistema seguro con QR</strong>, pero la verificación solo muestra “Periodista acreditado”, nunca datos personales.</li>
-  </ul>
-
-  <p>
-    Con este modelo, <strong>los periodistas de investigación, filtraciones o coberturas incómodas para el poder</strong> están mucho más protegidos. 
-    Además, cada nuevo portador fortalece al colectivo entero: es imposible saber quién investiga qué, y atacar a uno sería atacar a todos.
-  </p>
-
-  <h3 style="margin-top:3rem;">Series de investigación</h3>
-  <Grid>
-    {series.map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
-  </Grid>
+  <section class="home-container">
+    <h2>Seguridad, transparencia y financiamiento</h2>
+    <p>
+      En Caballo Azteca, proteger a quienes denuncian y colaboran es una prioridad. Usamos <strong>cifrado PGP y canales seguros</strong> para recibir información.  
+      No almacenamos datos innecesarios y nunca revelamos identidades.  
+      <br /><br />
+      Nuestra independencia es posible porque <strong>nos financiamos exclusivamente con donaciones</strong> de personas comprometidas con la verdad.  
+      No respondemos a intereses políticos, económicos ni corporativos.  
+      <br /><br />
+      Si quieres ayudarnos a continuar con esta labor, puedes aportar de forma segura:
+    </p>
+    <p style="text-align:center; margin-top:2rem;">
+      <a href="/donar" class="button-link">Apoyar con una donación</a>
+    </p>
+  </section>
 
   <style>
-    /* BOTÓN FIJO EN MÓVILES */
-    @media (max-width: 768px) {
-      #btn-solicitar {
-        position: fixed;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 9999;
-        width: 90%;
+    .home-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .home-container h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .home-container h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: var(--color-accent, #0070f3);
+      text-align: center;
+    }
+
+    .home-container p {
+      margin-bottom: 1rem;
+    }
+
+    .home-container ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+
+    .home-container li {
+      margin-bottom: 0.8rem;
+    }
+
+    .home-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 0.7rem 1.4rem;
+      background: #0070f3;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .button-link:hover {
+      background: #005fc1;
+    }
+
+    .button-link.secondary {
+      background: #222;
+    }
+
+    @media (max-width: 600px) {
+      .home-container {
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
+      }
+
+      .home-container h1 {
+        font-size: 1.6rem;
+      }
+
+      .home-container h2 {
+        font-size: 1.1rem;
+      }
+
+      .home-buttons {
+        flex-direction: column;
+      }
+
+      .button-link {
+        width: 100%;
         text-align: center;
       }
     }
   </style>
-
-  <script>
-    // CONTADOR DINÁMICO ANIMADO
-    const counterEl = document.getElementById('counter');
-    let current = 0;
-    const target = 500;
-    const increment = Math.ceil(target / 80);
-
-    const animateCounter = () => {
-      if (current < target) {
-        current += increment;
-        counterEl.textContent = `+${current} Carnets entregados en todo México`;
-        requestAnimationFrame(animateCounter);
-      } else {
-        counterEl.textContent = `+${target} Carnets entregados en todo México`;
-      }
-    };
-    window.addEventListener('DOMContentLoaded', animateCounter);
-  </script>
 </BaseLayout>
