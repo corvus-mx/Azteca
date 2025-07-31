@@ -1,6 +1,4 @@
 ---
-export const prerender = false;
-
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
 // Lista de carnets válidos hardcodeados
@@ -11,8 +9,22 @@ const carnetsValidos = [
     emitido: "Julio 2025",
     vigencia: "1 año",
     estado: "valido"
+  },
+  {
+    hash: "CA-8K4T-11XX-66LL-99ZZ",
+    nombre: "Colaborador Especial",
+    emitido: "Junio 2025",
+    vigencia: "1 año",
+    estado: "valido"
   }
 ];
+
+// 🔹 Astro generará una página por cada carnet
+export async function getStaticPaths() {
+  return carnetsValidos.map(c => ({
+    params: { hash: c.hash }
+  }));
+}
 
 const { hash } = Astro.params;
 const carnet = carnetsValidos.find(c => c.hash === hash);
@@ -26,6 +38,9 @@ const carnet = carnetsValidos.find(c => c.hash === hash);
     {carnet ? (
       <div class="bg-white shadow-lg rounded-xl p-6">
         <p class="text-green-600 font-bold text-lg">✔ Carnet válido y vigente</p>
+        <p class="mt-2 text-gray-700">
+          Perteneciente a <strong>{carnet.nombre}</strong>.
+        </p>
       </div>
     ) : (
       <div class="bg-white shadow-lg rounded-xl p-6">
