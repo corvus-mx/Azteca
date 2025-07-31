@@ -1,10 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
-// Recibe el hash desde la URL
-const { hash } = Astro.params;
-
-// Lista de carnets válidos (hardcodeado directamente en el archivo)
+// Lista de carnets válidos
 const carnetsValidos = [
   {
     hash: "CA-9X7Q-13AM-77SD-42",
@@ -12,55 +9,35 @@ const carnetsValidos = [
     emitido: "Julio 2025",
     vigencia: "1 año",
     estado: "valido"
-  },
-  {
-    hash: "CA-8K4T-11XX-66LL-99ZZ",
-    nombre: "Colaborador Especial",
-    emitido: "Junio 2025",
-    vigencia: "1 año",
-    estado: "valido"
   }
 ];
 
-// Busca si el carnet existe
+export async function getStaticPaths() {
+  return carnetsValidos.map(c => ({
+    params: { hash: c.hash }
+  }));
+}
+
+const { hash } = Astro.params;
 const carnet = carnetsValidos.find(c => c.hash === hash);
 ---
 
 <BaseLayout title="Verificación de Carnet | Caballo Azteca">
   <section class="max-w-3xl mx-auto text-center py-12 px-4">
-    <div class="mb-6">
-      <img 
-        src="/logo-caballo-azteca.png" 
-        alt="Caballo Azteca" 
-        class="w-24 h-24 mx-auto mb-4"
-      />
-      <h1 class="text-3xl font-bold mb-2">Verificación de Carnet</h1>
-      <p class="text-gray-600">Código: <strong>{hash}</strong></p>
-    </div>
+    <h1 class="text-3xl font-bold mb-2">Verificación de Carnet</h1>
+    <p class="text-gray-600">Código: <strong>{hash}</strong></p>
 
     {carnet ? (
       <div class="bg-white shadow-lg rounded-xl p-6">
-        <h2 class="text-xl font-semibold mb-4">Resultado de Verificación</h2>
-        {carnet.estado === "valido" ? (
-          <div>
-            <p class="text-green-600 font-bold text-lg">✔ Carnet válido y vigente</p>
-            <p class="mt-2 text-gray-700">
-              Este carnet pertenece a <strong>{carnet.nombre}</strong>, miembro activo de <strong>Caballo Azteca</strong>.
-            </p>
-            <p class="mt-2 text-gray-500 text-sm">
-              Emitido el: <strong>{carnet.emitido}</strong><br/>
-              Vigencia: <strong>{carnet.vigencia}</strong>
-            </p>
-          </div>
-        ) : (
-          <p class="text-red-600 font-bold text-lg">✘ Carnet no válido o vencido</p>
-        )}
+        <p class="text-green-600 font-bold text-lg">✔ Carnet válido y vigente</p>
+        <p class="mt-2 text-gray-700">
+          Perteneciente a <strong>{carnet.nombre}</strong>.
+        </p>
       </div>
     ) : (
       <div class="bg-white shadow-lg rounded-xl p-6">
-        <p class="text-red-600 font-bold text-lg">✘ Este carnet no existe en el sistema</p>
+        <p class="text-red-600 font-bold text-lg">✘ Carnet no existe</p>
       </div>
     )}
-
   </section>
 </BaseLayout>
