@@ -14,62 +14,63 @@ layout: ../../../layouts/ArticleLayout.astro
 
 # ¿De dónde nace Caballo Azteca?
 
-**Caballo Azteca nació este 2025** como un medio independiente de investigación que opera desde el anonimato, sin financiamiento externo, sin intereses corporativos y sin rostro visible. Su origen es la urgencia, su motor la resistencia, y su vocación la verdad.  
+**Caballo Azteca nació este 2025** como un colectivo descentralizado de investigación ciudadana que aplica técnicas de inteligencia de fuentes abiertas (OSINT) para exponer casos que las autoridades mexicanas han ignorado. Operamos como una red distribuida, sin jerarquías centralizadas, sin financiamiento externo y bajo principios de anonimato colectivo.
 
-Este proyecto apenas comienza: **las investigaciones ya están en marcha**, pero las primeras publicaciones se darán a conocer muy pronto. Nuestro compromiso es construir una red sólida antes de publicar cada historia, para que cada caso esté respaldado por evidencia, rigor y protección de quienes deciden hablar.  
+Somos un **movimiento de investigadores ciudadanos** inspirado en colectivos internacionales de investigación digital, pero enfocado específicamente en México. Combinamos periodismo de investigación tradicional con técnicas avanzadas de OSINT, análisis forense digital y verificación cruzada de información.
 
 👉 **No todas las investigaciones se publicarán.** Algunos casos (los únicos hasta ahora) se han llevado a cabo exclusivamente con fines de ayuda a los afectados y, por respeto a ellos, no se han hecho públicos. Si las personas involucradas prefieren que su información se mantenga en privado, se respeta su decisión.  
 
-**Caballo Azteca no es solo mío.** Somos una red abierta de periodistas, investigadores y ciudadanos. Nuestro objetivo es el mismo que viste en la página principal:  
-**investigar lo que el gobierno no ha querido o no ha podido investigar, y hacer público lo que los grandes medios callaron por miedo o intereses.**
+**Caballo Azteca es un colectivo descentralizado.** Somos una red abierta de investigadores digitales, analistas de datos, periodistas ciudadanos y especialistas en verificación. Nuestro objetivo es aplicar metodologías rigurosas de investigación ciudadana para:
+**exponer patrones de corrupción y crimen organizado que las autoridades no han querido o no han podido investigar.**
 
-Además de informar, buscamos **ayudar a resolver los casos que las autoridades han ignorado**, abrir investigaciones y dar voz a quienes ya agotaron las vías oficiales sin obtener respuesta.  
+Como colectivo de investigación ciudadana, no solo informamos: **aplicamos técnicas de inteligencia de fuentes abiertas para generar evidencia verificable** que pueda ser utilizada por autoridades, organizaciones civiles o la ciudadanía para exigir justicia.
 
 ---
 
 ## ¿Cómo puedes colaborar?
 
-**Caballo Azteca es un proyecto colectivo:** cualquiera puede participar.  
-Puedes colaborar de varias formas:  
+**Caballo Azteca es un colectivo descentralizado:** cualquier ciudadano con habilidades relevantes puede contribuir.
+Puedes unirte al colectivo de varias formas:
 
-- **Investigando o documentando casos** junto a la red.  
-- **Aportando información** relevante (filtraciones, testimonios, documentos).  
-- **Difundiendo las investigaciones** y ayudando a que lleguen más lejos.  
+- **Aplicando técnicas OSINT** para verificar información y analizar documentos.
+- **Contribuyendo con habilidades técnicas:** análisis forense digital, geolocalización, investigación en redes sociales, análisis de datos financieros.
+- **Filtrando información** relevante (documentos, bases de datos, testimonios).
+- **Amplificando las investigaciones** a través de redes descentralizadas.
 
-Si eres periodista, fotógrafo, videógrafo, editor o trabajas en comunicación, puedes solicitar el **Carnet de Prensa de Caballo Azteca**.  
+Si tienes experiencia en investigación digital, periodismo, análisis de datos o verificación de hechos, puedes solicitar el **Carnet de Investigador Ciudadano de Caballo Azteca**.
 
-🔹 **El carnet es gratuito y está diseñado para apoyar a periodistas e investigadores que enfrentan riesgos por su trabajo.**  
-🔹 Puedes usarlo para acceder a coberturas en campo o para respaldar tu labor independiente.  
-🔹 Se entrega en **inglés** para facilitar la entrada en instituciones internacionales y zonas de alto control.  
+🔹 **El carnet es gratuito y está diseñado para proteger a investigadores ciudadanos que operan en casos de alto riesgo.**
+🔹 Puedes usarlo para acceder a información pública, respaldar solicitudes de transparencia o identificarte como parte del colectivo.
+🔹 Se entrega en **inglés** para facilitar el reconocimiento internacional y la protección en zonas de conflicto.
 🔹 Si deseas el carnet:  
 👉 [Solicítalo aquí](/carnet)  
 
-Esto es más que un documento: es un símbolo de respaldo colectivo.  
+Esto es más que un documento: es un símbolo de pertenencia a una red descentralizada de investigación ciudadana.
 
 ---
 
-Vivo en una tierra hermosa pero silenciada. Mientras Quintana Roo se transforma ante el avance del turismo masivo y el capital extranjero, aumentan también la corrupción, la impunidad, el desplazamiento y la violencia. Y lo peor: muchos de estos temas ni siquiera se investigan. Ahí entra Caballo Azteca.
+México enfrenta una crisis de transparencia e impunidad. Mientras el país se transforma bajo presiones económicas y políticas complejas, aumentan los casos de corrupción, crimen organizado y violaciones a derechos humanos que permanecen sin investigar. Los medios tradicionales enfrentan limitaciones estructurales y los ciudadanos carecen de herramientas para generar evidencia verificable. **Ahí entra Caballo Azteca como colectivo de investigación ciudadana.**
 
 ## ¿Por qué el anonimato?
 
-Porque hacer periodismo en México puede costar la vida. Según datos de **Artículo 19**, al menos **43 periodistas han sido asesinados en este sexenio por motivos relacionados con su labor informativa**. El sureste del país no ha sido ajeno: colegas han sido amenazados, desaparecidos o silenciados por exponer verdades incómodas.
+Porque investigar corrupción y crimen organizado en México puede costar la vida. Según datos de **Artículo 19**, al menos **43 periodistas han sido asesinados en este sexenio**. Los investigadores ciudadanos que exponen redes criminales o casos de corrupción enfrentan riesgos similares.
 
-Por eso no tenemos redacción física. **Trabajamos en red**. Caballo Azteca se aloja en servidores descentralizados (IPFS), usamos cifrado punto a punto y mantenemos todo fuera del control de autoridades o empresas. Es la única manera de sobrevivir para informar.
+Por eso operamos como **red descentralizada sin puntos únicos de falla**. Caballo Azteca se aloja en servidores distribuidos, usamos cifrado punto a punto, compartimentación de información y protocolos de seguridad operacional. Como colectivo anónimo, somos resilientes: no pueden silenciarnos atacando a una sola persona o institución.
 
 ## ¿Cómo trabajamos?
 
-Este proyecto es nuevo, pero no es improvisado. **Las primeras investigaciones ya comenzaron**, con el apoyo de personas que confían y aportan datos y pistas sobre casos graves en Quintana Roo. Cada historia está en proceso de ser documentada con rigor antes de ser publicada.  
+Este colectivo es nuevo, pero aplica metodologías probadas internacionalmente. **Las primeras investigaciones ya comenzaron**, utilizando técnicas OSINT para verificar información sobre casos graves de corrupción y crimen organizado. Cada investigación se documenta con rigor metodológico antes de ser publicada.
 
 👉 Reiteramos: **algunas investigaciones podrían no hacerse públicas si los afectados así lo deciden.** En esos casos, Caballo Azteca actúa únicamente como un canal de apoyo y protección para resolver lo que las autoridades han ignorado.  
 
-Nuestra forma de investigar combina distintas herramientas, siempre con ética y con el compromiso de proteger a quienes deciden hablar:
+Nuestra metodología combina técnicas de investigación ciudadana probadas internacionalmente:
 
-- Investigación tradicional (fuentes directas, entrevistas, documentos)  
-- OSINT (inteligencia de fuentes abiertas)  
-- Periodismo de filtración (whistleblowers, documentos, testimonios)  
-- Protección de fuentes (PGP, mensajería cifrada, servidores fuera del país)
+- **OSINT avanzado:** análisis de bases de datos públicas, verificación cruzada, geolocalización, investigación en redes sociales
+- **Análisis forense digital:** verificación de documentos, análisis de metadatos, detección de manipulaciones
+- **Investigación colaborativa:** trabajo en red con especialistas en diferentes áreas
+- **Seguridad operacional:** protección de fuentes mediante cifrado, compartimentación y anonimato colectivo
 
-Esto apenas comienza, pero con tu ayuda podemos llegar muy lejos. **Una montaña se construye con muchos granos de arena: historia por historia, denuncia por denuncia.**
+Como colectivo descentralizado, crecemos con cada nuevo investigador que se une. **Una red resiliente se construye con muchos nodos: investigación por investigación, verificación por verificación.**
 
 ## ¿Qué vamos a investigar?
 

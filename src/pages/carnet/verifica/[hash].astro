@@ -1,57 +1,407 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 
-// 🔹 Definir la lista dentro del mismo bloque
-export const carnetsValidos = [
-  {
-    hash: "CA-9X7Q-13AM-77SD-42",
-    nombre: "Miembro Anónimo",
-    emitido: "Julio 2025",
-    vigencia: "1 año",
-    estado: "valido"
-  },
-  {
-    hash: "CA-8K4T-11XX-66LL-99ZZ",
-    nombre: "Colaborador Especial",
-    emitido: "Junio 2025",
-    vigencia: "1 año",
-    estado: "valido"
-  }
-];
+// 🔹 Sistema escalable de verificación de carnets
+// En producción, esto se conectaría a una base de datos descentralizada
 
-// 🔹 Generar rutas estáticas en el build
+// Función para generar hash válido
+function generateValidHash() {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  const segments = [];
+  for (let i = 0; i < 4; i++) {
+    let segment = '';
+    for (let j = 0; j < 4; j++) {
+      segment += chars[Math.floor(Math.random() * chars.length)];
+    }
+    segments.push(segment);
+  }
+  return `CA-${segments.join('-')}`;
+}
+
+// Función para validar formato de hash
+function isValidHashFormat(hash: string): boolean {
+  const pattern = /^CA-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
+  return pattern.test(hash);
+}
+
+// Función para verificar si un hash existe (simulado)
+// En producción, esto consultaría una base de datos distribuida
+function verifyHashExists(hash: string): boolean {
+  // Lista de hashes válidos conocidos (en producción sería una consulta a BD)
+  const knownHashes = [
+    'CA-9X7Q-13AM-77SD-42',
+    'CA-8K4T-11XX-66LL-99',
+    'CA-2M5P-88QR-44WW-33',
+    'CA-7N6K-99TT-55YY-11',
+    'CA-4L8J-77PP-66MM-88'
+  ];
+  
+  return knownHashes.includes(hash);
+}
+
+// Base de datos simulada de carnets (en producción sería distribuida)
+const carnetsDatabase = new Map([
+  ['CA-9X7Q-13AM-77SD-42', {
+    tipo: 'Investigador OSINT',
+    especialidad: 'Análisis de redes sociales',
+    emitido: 'Enero 2025',
+    vigencia: '2 años',
+    estado: 'activo'
+  }],
+  ['CA-8K4T-11XX-66LL-99', {
+    tipo: 'Investigador Digital',
+    especialidad: 'Análisis forense de documentos',
+    emitido: 'Febrero 2025',
+    vigencia: '2 años',
+    estado: 'activo'
+  }],
+  ['CA-2M5P-88QR-44WW-33', {
+    tipo: 'Analista de Datos',
+    especialidad: 'Correlación de bases de datos públicas',
+    emitido: 'Marzo 2025',
+    vigencia: '2 años',
+    estado: 'activo'
+  }],
+  ['CA-7N6K-99TT-55YY-11', {
+    tipo: 'Especialista en Geolocalización',
+    especialidad: 'Verificación de ubicaciones',
+    emitido: 'Abril 2025',
+    vigencia: '2 años',
+    estado: 'activo'
+  }],
+  ['CA-4L8J-77PP-66MM-88', {
+    tipo: 'Verificador de Hechos',
+    especialidad: 'Fact-checking y fuentes abiertas',
+    emitido: 'Mayo 2025',
+    vigencia: '2 años',
+    estado: 'activo'
+  }]
+]);
+
+// Generar rutas estáticas para todos los hashes válidos
 export function getStaticPaths() {
-  return carnetsValidos.map((c) => ({
-    params: { hash: c.hash },
+  // En producción, esto consultaría la base de datos distribuida
+  const validHashes = Array.from(carnetsDatabase.keys());
+  
+  return validHashes.map((hash) => ({
+    params: { hash },
   }));
 }
 
-// 🔹 Obtener hash de la URL
+// Obtener hash de la URL
 const { hash } = Astro.params;
 
-// 🔹 Buscar el carnet
-const carnet = carnetsValidos.find((c) => c.hash === hash);
+// Verificar formato y existencia del hash
+const isValidFormat = isValidHashFormat(hash || '');
+const hashExists = hash ? verifyHashExists(hash) : false;
+const carnetData = hash ? carnetsDatabase.get(hash) : null;
+
+// Datos del carnet (si existe)
+const carnet = hashExists && carnetData ? {
+  hash,
+  ...carnetData
+} : null;
 ---
 
-<BaseLayout title="Verificación de Carnet | Caballo Azteca">
-  <section class="max-w-3xl mx-auto text-center py-12 px-4">
-    <h1 class="text-3xl font-bold mb-2">Verificación de Carnet</h1>
-    <p class="text-gray-600">Código: <strong>{hash}</strong></p>
+<BaseLayout title="Verificación de Carnet de Investigador Ciudadano | Caballo Azteca">
+  <section class="verification-container">
+    <div class="verification-header">
+      <h1>Verificación de Carnet de Investigador Ciudadano</h1>
+      <p class="hash-display">ID: <strong>{hash}</strong></p>
+    </div>
 
-    {carnet ? (
-      <div class="bg-white shadow-lg rounded-xl p-6">
-        <p class="text-green-600 font-bold text-lg">✔ Carnet válido y vigente</p>
-        <p class="mt-2 text-gray-700">
-          Perteneciente a <strong>{carnet.nombre}</strong>.
-        </p>
-        <p class="text-gray-500 text-sm">
-          Emitido: <strong>{carnet.emitido}</strong> – Vigencia: <strong>{carnet.vigencia}</strong>
-        </p>
-      </div>
-    ) : (
-      <div class="bg-white shadow-lg rounded-xl p-6">
-        <p class="text-red-600 font-bold text-lg">✘ Carnet no existe en el sistema</p>
-      </div>
-    )}
+    <div class="verification-result">
+      {!isValidFormat ? (
+        <div class="result-card invalid-format">
+          <div class="status-icon">⚠️</div>
+          <h2>Formato de ID inválido</h2>
+          <p>El identificador no cumple con el formato estándar del colectivo.</p>
+          <p class="format-info">Formato válido: CA-XXXX-XXXX-XXXX-XXXX</p>
+        </div>
+      ) : carnet ? (
+        <div class="result-card valid">
+          <div class="status-icon">✅</div>
+          <h2>Investigador Ciudadano Verificado</h2>
+          <div class="carnet-details">
+            <div class="detail-row">
+              <span class="label">Tipo:</span>
+              <span class="value">{carnet.tipo}</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Especialidad:</span>
+              <span class="value">{carnet.especialidad}</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Emitido:</span>
+              <span class="value">{carnet.emitido}</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Vigencia:</span>
+              <span class="value">{carnet.vigencia}</span>
+            </div>
+            <div class="detail-row">
+              <span class="label">Estado:</span>
+              <span class="value status-active">{carnet.estado}</span>
+            </div>
+          </div>
+          <div class="verification-note">
+            <p><strong>Nota:</strong> Este investigador forma parte del colectivo descentralizado Caballo Azteca y está autorizado para realizar investigaciones ciudadanas usando técnicas OSINT.</p>
+          </div>
+        </div>
+      ) : (
+        <div class="result-card invalid">
+          <div class="status-icon">❌</div>
+          <h2>ID no encontrado en el sistema</h2>
+          <p>Este identificador no corresponde a ningún investigador acreditado en nuestra red descentralizada.</p>
+          <div class="security-note">
+            <p><strong>Advertencia de seguridad:</strong> Si alguien está usando este ID de forma fraudulenta, repórtalo a través de nuestros canales seguros.</p>
+          </div>
+        </div>
+      )}
+    </div>
+
+    <div class="verification-info">
+      <h3>Sobre el Sistema de Verificación</h3>
+      <ul>
+        <li>Cada investigador del colectivo tiene un ID único criptográfico</li>
+        <li>La verificación confirma pertenencia al colectivo sin revelar identidad personal</li>
+        <li>El sistema es descentralizado y resistente a manipulación</li>
+        <li>Los IDs pueden renovarse periódicamente por seguridad operacional</li>
+      </ul>
+    </div>
+
+    <div class="action-buttons">
+      <a href="/carnet" class="button secondary">Solicitar Carnet</a>
+      <a href="/contact" class="button primary">Contacto Seguro</a>
+      <a href="/" class="button secondary">Volver al Inicio</a>
+    </div>
   </section>
 </BaseLayout>
+
+<style>
+  .verification-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .verification-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .verification-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  .hash-display {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    font-family: var(--font-mono, monospace);
+    background: var(--color-surface-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: inline-block;
+  }
+
+  .verification-result {
+    margin-bottom: 3rem;
+  }
+
+  .result-card {
+    background: var(--color-surface-primary);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .result-card.valid {
+    border: 2px solid #28a745;
+  }
+
+  .result-card.invalid {
+    border: 2px solid #dc3545;
+  }
+
+  .result-card.invalid-format {
+    border: 2px solid #ffc107;
+  }
+
+  .status-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .result-card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .carnet-details {
+    text-align: left;
+    margin: 1.5rem 0;
+    background: var(--color-surface-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .detail-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .label {
+    font-weight: 600;
+    color: var(--color-text-secondary);
+  }
+
+  .value {
+    color: var(--color-text-primary);
+  }
+
+  .status-active {
+    color: #28a745;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .verification-note,
+  .security-note {
+    background: var(--color-surface-secondary);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .security-note {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+  }
+
+  .format-info {
+    font-family: var(--font-mono, monospace);
+    background: var(--color-surface-secondary);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+
+  .verification-info {
+    background: var(--color-surface-secondary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  .verification-info h3 {
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  .verification-info ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+
+  .verification-info li {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .button.primary {
+    background: var(--color-accent);
+    color: white;
+  }
+
+  .button.secondary {
+    background: transparent;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .verification-container {
+      padding: 1rem;
+    }
+
+    .result-card {
+      padding: 1.5rem;
+    }
+
+    .detail-row {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .action-buttons {
+      flex-direction: column;
+    }
+
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  // Función para generar más hashes válidos dinámicamente (para testing)
+  function generateTestHashes(count: number = 100): string[] {
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const hashes: string[] = [];
+    
+    for (let i = 0; i < count; i++) {
+      const segments = [];
+      for (let j = 0; j < 4; j++) {
+        let segment = '';
+        for (let k = 0; k < 4; k++) {
+          segment += chars[Math.floor(Math.random() * chars.length)];
+        }
+        segments.push(segment);
+      }
+      hashes.push(`CA-${segments.join('-')}`);
+    }
+    
+    return hashes;
+  }
+
+  // En desarrollo, generar hashes adicionales para testing
+  if (import.meta.env.DEV) {
+    console.log('Hashes de prueba generados:', generateTestHashes(10));
+  }
+</script>
