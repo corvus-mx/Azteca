@@ -1,0 +1,88 @@
+---
+title: "[Título del caso]"
+date: "[Fecha de publicación]"
+summary: "[Resumen breve del caso]"
+tags: ["cold case", "corrupción", "investigación", "cuello blanco"]
+cover: "[Ruta de imagen de portada]"
+image1: "[Primera imagen relacionada]"
+image2: "[Segunda imagen relacionada]"
+image3: "[Tercera imagen relacionada]"
+image4: "[Cuarta imagen relacionada]"
+series: "Casos Fríos de Cuello Blanco"
+layout: ../../../layouts/ArticleLayout.astro
+---
+
+# [Título del caso]
+
+---
+
+## Contexto del Caso
+
+[Descripción del origen del caso, actores involucrados, hechos ocurridos y situación inicial.]
+
+---
+
+## Estado Actual del Caso
+
+[Situación legal o pública actual. Cierre, archivo, omisiones, estancamiento o falta de resolución.]
+
+---
+
+## Nuevas Evidencias u Observaciones
+
+[Resultados de la investigación propia u observaciones encontradas mediante revisión documental, análisis digital, datos abiertos u OSINT.]
+
+---
+
+## Hipótesis y Preguntas Abiertas
+
+[Planteamiento de hipótesis periodísticas e interrogantes relevantes sobre el caso.]
+
+---
+
+## Conexiones con Otros Casos o Tendencias
+
+[Relaciones entre este caso y patrones similares, redes implicadas o eventos relacionados.]
+
+---
+
+## Reacción de las Autoridades
+
+[Descripción de acciones, omisiones o respuestas por parte de instituciones públicas o privadas.]
+
+---
+
+## Entrevistas y Testimonios
+
+[Testimonios relevantes obtenidos mediante entrevistas directas, grabaciones o filtraciones.]
+
+---
+
+## Verificación y Métodos Usados
+
+[Descripción del proceso investigativo y las herramientas empleadas (OSINT, registros, transparencia, etc.).]
+
+---
+
+## Reflexión Final o Llamado a la Acción
+
+[Conclusión o mensaje orientado a la audiencia.]
+
+---
+
+## Referencias
+
+1. [Fuente 1]
+2. [Fuente 2]
+3. [Fuente 3]
+4. [Fuente 4]
+5. [Fuente 5]
+
+---
+
+## Autor
+
+**Autoría:** [Tu nombre o pseudónimo]  
+**Contacto seguro:** [Correo cifrado u otro método]
+
+---
