@@ -1,0 +1,30 @@
+{
+  "CA-9X7Q-13AM-77SD-42": {
+    "tipo": "Periodista de Investigacion",
+    "especialidad": "Investigacion Digital",
+    "emitido": "Julio 2025",
+    "vigencia": "1 año",
+    "estado": "activo"
+  },
+  "CA-8K4T-11XX-66LL-99": {
+    "tipo": "Fotógrafo",
+    "especialidad": "Registro fotográfico o en video como evidencia",
+    "emitido": "Febrero 2025",
+    "vigencia": "1 año",
+    "estado": "activo"
+  },
+  "CA-2M5P-88QR-44WW-33": {
+    "tipo": "Creador de Contenido / Influencer",
+    "especialidad": "Envío de investigaciones o filtraciones",
+    "emitido": "Marzo 2025",
+    "vigencia": "1 año",
+    "estado": "activo"
+  },
+  "CA-XXXX-YYYY-ZZZZ-1111": {
+    "tipo": "Colaborador / Ciudadano",
+    "especialidad": "Aporte de evidencias digitales",
+    "emitido": "Abril 2025",
+    "vigencia": "1 año",
+    "estado": "activo"
+  }
+}
