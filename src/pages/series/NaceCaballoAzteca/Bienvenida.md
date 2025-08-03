@@ -14,63 +14,63 @@ layout: ../../../layouts/ArticleLayout.astro
 
 # ¿De dónde nace Caballo Azteca?
 
-**Caballo Azteca nació este 2025** como un colectivo descentralizado de investigación ciudadana que aplica técnicas de inteligencia de fuentes abiertas (OSINT) para exponer casos que las autoridades mexicanas han ignorado. Operamos como una red distribuida, sin jerarquías centralizadas, sin financiamiento externo y bajo principios de anonimato colectivo.
+**Caballo Azteca nació este 2025** como una plataforma de investigación ciudadana que aplica técnicas de inteligencia de fuentes abiertas (OSINT) para exponer casos que las autoridades mexicanas han ignorado. Funciona como una red abierta, sin barreras de entrada, sin financiamiento externo y bajo principios de protección de fuentes.
 
-Somos un **movimiento de investigadores ciudadanos** inspirado en colectivos internacionales de investigación digital, pero enfocado específicamente en México. Combinamos periodismo de investigación tradicional con técnicas avanzadas de OSINT, análisis forense digital y verificación cruzada de información.
+Es un **movimiento de investigadores ciudadanos** inspirado en organizaciones como Bellingcat y en la filosofía de movimientos como Anonymous: cualquier persona puede ser parte de Caballo Azteca. Combino periodismo de investigación tradicional con técnicas avanzadas de OSINT, análisis forense digital y verificación cruzada de información.
 
 👉 **No todas las investigaciones se publicarán.** Algunos casos (los únicos hasta ahora) se han llevado a cabo exclusivamente con fines de ayuda a los afectados y, por respeto a ellos, no se han hecho públicos. Si las personas involucradas prefieren que su información se mantenga en privado, se respeta su decisión.  
 
-**Caballo Azteca es un colectivo descentralizado.** Somos una red abierta de investigadores digitales, analistas de datos, periodistas ciudadanos y especialistas en verificación. Nuestro objetivo es aplicar metodologías rigurosas de investigación ciudadana para:
+**Caballo Azteca es una red abierta.** Es una plataforma donde investigadores digitales, analistas de datos, periodistas ciudadanos y especialistas en verificación pueden contribuir. Mi objetivo es aplicar metodologías rigurosas de investigación ciudadana para:
 **exponer patrones de corrupción y crimen organizado que las autoridades no han querido o no han podido investigar.**
 
-Como colectivo de investigación ciudadana, no solo informamos: **aplicamos técnicas de inteligencia de fuentes abiertas para generar evidencia verificable** que pueda ser utilizada por autoridades, organizaciones civiles o la ciudadanía para exigir justicia.
+Como plataforma de investigación ciudadana, no solo informo: **aplico técnicas de inteligencia de fuentes abiertas para generar evidencia verificable** que pueda ser utilizada por autoridades, organizaciones civiles o la ciudadanía para exigir justicia.
 
 ---
 
 ## ¿Cómo puedes colaborar?
 
-**Caballo Azteca es un colectivo descentralizado:** cualquier ciudadano con habilidades relevantes puede contribuir.
-Puedes unirte al colectivo de varias formas:
+**Caballo Azteca es una red abierta:** cualquier ciudadano con habilidades relevantes puede contribuir.
+Puedes unirte a la red de varias formas:
 
-- **Aplicando técnicas OSINT** para verificar información y analizar documentos.
-- **Contribuyendo con habilidades técnicas:** análisis forense digital, geolocalización, investigación en redes sociales, análisis de datos financieros.
-- **Filtrando información** relevante (documentos, bases de datos, testimonios).
-- **Amplificando las investigaciones** a través de redes descentralizadas.
+- **Enviándome investigaciones** que hayas realizado aplicando técnicas OSINT.
+- **Compartiendo habilidades técnicas:** análisis forense digital, geolocalización, investigación en redes sociales, análisis de datos financieros.
+- **Filtrando información** relevante (documentos, bases de datos, testimonios) que consideres de interés público.
+- **Amplificando las investigaciones** verificadas a través de redes sociales y otros medios.
 
-Si tienes experiencia en investigación digital, periodismo, análisis de datos o verificación de hechos, puedes solicitar el **Carnet de Investigador Ciudadano de Caballo Azteca**.
+Si tienes experiencia en investigación digital, periodismo, análisis de datos o verificación de hechos, puedes solicitar el **Carnet de Investigador de la Red Caballo Azteca**.
 
-🔹 **El carnet es gratuito y está diseñado para proteger a investigadores ciudadanos que operan en casos de alto riesgo.**
-🔹 Puedes usarlo para acceder a información pública, respaldar solicitudes de transparencia o identificarte como parte del colectivo.
+🔹 **El carnet es gratuito y está diseñado para proteger a investigadores que operan en casos de alto riesgo.**
+🔹 Puedes usarlo para acceder a información pública, respaldar solicitudes de transparencia o identificarte como parte de la red.
 🔹 Se entrega en **inglés** para facilitar el reconocimiento internacional y la protección en zonas de conflicto.
 🔹 Si deseas el carnet:  
 👉 [Solicítalo aquí](/carnet)  
 
-Esto es más que un documento: es un símbolo de pertenencia a una red descentralizada de investigación ciudadana.
+Esto es más que un documento: es un símbolo de pertenencia a una red abierta de investigación ciudadana donde cualquier persona puede ser Caballo Azteca.
 
 ---
 
-México enfrenta una crisis de transparencia e impunidad. Mientras el país se transforma bajo presiones económicas y políticas complejas, aumentan los casos de corrupción, crimen organizado y violaciones a derechos humanos que permanecen sin investigar. Los medios tradicionales enfrentan limitaciones estructurales y los ciudadanos carecen de herramientas para generar evidencia verificable. **Ahí entra Caballo Azteca como colectivo de investigación ciudadana.**
+México enfrenta una crisis de transparencia e impunidad. Mientras el país se transforma bajo presiones económicas y políticas complejas, aumentan los casos de corrupción, crimen organizado y violaciones a derechos humanos que permanecen sin investigar. Los medios tradicionales enfrentan limitaciones estructurales y los ciudadanos carecen de herramientas para generar evidencia verificable. **Ahí entra Caballo Azteca como plataforma de investigación ciudadana.**
 
 ## ¿Por qué el anonimato?
 
 Porque investigar corrupción y crimen organizado en México puede costar la vida. Según datos de **Artículo 19**, al menos **43 periodistas han sido asesinados en este sexenio**. Los investigadores ciudadanos que exponen redes criminales o casos de corrupción enfrentan riesgos similares.
 
-Por eso operamos como **red descentralizada sin puntos únicos de falla**. Caballo Azteca se aloja en servidores distribuidos, usamos cifrado punto a punto, compartimentación de información y protocolos de seguridad operacional. Como colectivo anónimo, somos resilientes: no pueden silenciarnos atacando a una sola persona o institución.
+Por eso opero como **red abierta sin puntos únicos de falla**. Caballo Azteca se aloja en servidores distribuidos, uso cifrado punto a punto, compartimentación de información y protocolos de seguridad operacional. Como red anónima inspirada en movimientos como Anonymous, somos resilientes: no pueden silenciarnos atacando a una sola persona o institución.
 
 ## ¿Cómo trabajamos?
 
-Este colectivo es nuevo, pero aplica metodologías probadas internacionalmente. **Las primeras investigaciones ya comenzaron**, utilizando técnicas OSINT para verificar información sobre casos graves de corrupción y crimen organizado. Cada investigación se documenta con rigor metodológico antes de ser publicada.
+Esta plataforma es nueva, pero aplico metodologías probadas internacionalmente como las que usa Bellingcat. **Las primeras investigaciones ya comenzaron**, utilizando técnicas OSINT para verificar información sobre casos graves de corrupción y crimen organizado. Cada investigación se documenta con rigor metodológico antes de ser publicada.
 
 👉 Reiteramos: **algunas investigaciones podrían no hacerse públicas si los afectados así lo deciden.** En esos casos, Caballo Azteca actúa únicamente como un canal de apoyo y protección para resolver lo que las autoridades han ignorado.  
 
-Nuestra metodología combina técnicas de investigación ciudadana probadas internacionalmente:
+Mi metodología combina técnicas de investigación ciudadana probadas internacionalmente:
 
 - **OSINT avanzado:** análisis de bases de datos públicas, verificación cruzada, geolocalización, investigación en redes sociales
 - **Análisis forense digital:** verificación de documentos, análisis de metadatos, detección de manipulaciones
-- **Investigación colaborativa:** trabajo en red con especialistas en diferentes áreas
-- **Seguridad operacional:** protección de fuentes mediante cifrado, compartimentación y anonimato colectivo
+- **Investigación colaborativa:** trabajo en red abierta con especialistas en diferentes áreas
+- **Seguridad operacional:** protección de fuentes mediante cifrado, compartimentación y anonimato distribuido
 
-Como colectivo descentralizado, crecemos con cada nuevo investigador que se une. **Una red resiliente se construye con muchos nodos: investigación por investigación, verificación por verificación.**
+Como red abierta, crecemos con cada nuevo investigador que se une. **Una red resiliente se construye con muchos nodos: investigación por investigación, verificación por verificación.**
 
 ## ¿Qué vamos a investigar?
 
@@ -120,7 +120,7 @@ También se han denunciado casos de concesiones irregulares, mal uso de inversi�
 
 ---
 
-Caballo Azteca nace como un contrapeso real: no aceptamos financiamiento público, subvenciones privadas ni publicidad comercial. No respondemos a intereses económicos ni partidos. Solo a la verdad y a quienes nos leen.
+Caballo Azteca nace como un contrapeso real: no acepto financiamiento público, subvenciones privadas ni publicidad comercial. No respondo a intereses económicos ni partidos. Solo a la verdad y a quienes me leen.
 
 ## ¿Qué puedes hacer tú?
 
@@ -133,13 +133,13 @@ Si has sido víctima o testigo de:
 - Fraudes inmobiliarios  
 - Represión  
 
-**Puedes escribirnos de forma segura y anónima.** Estamos habilitando canales de contacto vía **ProtonMail, usando PGP**.
+**Puedes escribirme de forma segura y anónima.** Tengo habilitados canales de contacto vía **ProtonMail, usando PGP**.
 
-Tu testimonio puede cambiar una historia. Puede abrir una investigación.  
+Tu testimonio puede cambiar una historia. Puede abrir una investigación. Tú decides si quieres crédito público, seudónimo o anonimato total.
 
 **Y también puedes colaborar investigando, documentando o difundiendo el trabajo.**  
-👉 Si necesitas respaldo para tu labor, **puedes solicitar el Carnet de Prensa de Caballo Azteca**: [Solicitar carnet](/carnet)
+👉 Si necesitas respaldo para tu labor, **puedes solicitar el Carnet de Investigador de la Red Caballo Azteca**: [Solicitar carnet](/carnet)
 
 ---
 
-**Este medio es nuevo, pero es tuyo, mío, y de todas las personas que creen que la verdad no debe tener dueño.**  
+**Esta plataforma es nueva, pero es tuya, mía, y de todas las personas que creen que la verdad no debe tener dueño. Cualquier persona puede ser Caballo Azteca.**

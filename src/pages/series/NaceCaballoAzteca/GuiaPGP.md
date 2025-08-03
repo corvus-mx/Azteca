@@ -1,15 +1,15 @@
 ---
-title: "Protejo a mis fuentes: Guía clara para usar PGP con ProtonMail"
+title: "Protejo a quienes me ayudan: Guía clara para usar PGP con ProtonMail"
 date: "2025-07-24"
-summary: "Proteger la identidad de quienes denuncian corrupción, violencia o crimen organizado es una responsabilidad ética. Esta guía práctica explica cómo cifrar mensajes con PGP y por qué uso ProtonMail como canal seguro."
+summary: "Proteger la identidad de quienes me comparten información sobre corrupción, violencia o crimen organizado es una responsabilidad ética. Esta guía práctica explica cómo cifrar mensajes con PGP y por qué uso ProtonMail como canal seguro."
 tags: ["seguridad digital", "PGP", "protección de fuentes", "filtraciones", "periodismo"]
 series: "NaceCaballoAzteca"
 layout: ../../../layouts/ArticleLayout.astro
 ---
 
-# Protejo a mis fuentes: Cómo usar PGP con ProtonMail
+# Protejo a quienes me ayudan: Cómo usar PGP con ProtonMail
 
-Hacer periodismo en México puede costarme la vida. Cada denuncia que recibo puede poner en riesgo a quien la filtra. Por eso, proteger la comunicación es una obligación. Entre 2010 y 2024, **más de 160 periodistas fueron asesinados**, muchos tras ser vulnerados digitalmente. Si eres informante o testigo, esta guía te ayudará a **enviarme mensajes cifrados de forma segura**.
+Hacer periodismo de investigación en México puede costarme la vida. Cada denuncia que recibo puede poner en riesgo a quien me la comparte. Por eso, proteger la comunicación es una obligación. Entre 2010 y 2024, **más de 160 periodistas fueron asesinados**, muchos tras ser vulnerados digitalmente. Si quieres compartir información conmigo, esta guía te ayudará a **enviarme mensajes cifrados de forma segura**.
 
 ## ¿Qué es PGP y por qué lo uso?
 
@@ -18,12 +18,12 @@ Hacer periodismo en México puede costarme la vida. Cada denuncia que recibo pue
 - Una **clave pública** (que comparto y tú usas para cifrar)
 - Una **clave privada** (que yo uso para descifrar)
 
-PGP es usado por medios como **Wikileaks**, **The Intercept** y organizaciones como la **EFF** o la **Freedom of the Press Foundation**.
+PGP es usado por organizaciones como **Bellingcat**, **Wikileaks**, **The Intercept** y la **EFF** o la **Freedom of the Press Foundation**.
 
 ### ¿Por qué es útil?
-- Nadie (ni siquiera tu proveedor de correo) puede leer lo que me envías
+- Nadie (ni siquiera tu proveedor de correo) puede leer lo que me compartes
 - Evita interceptaciones o falsificaciones
-- Protege tu identidad si decides denunciar
+- Protege tu identidad si decides compartir información sensible
 
 ## ¿Por qué uso ProtonMail?
 
@@ -31,12 +31,13 @@ PGP es usado por medios como **Wikileaks**, **The Intercept** y organizaciones c
 
 > 📬 Mi dirección segura: `caballoazteca@protonmail.com`  
 >🔑 <a href="/pgp-key.asc" download>Descargar clave pública PGP (.asc)</a>
+
 ### Ventajas que valoro:
 - Cifrado automático si escribes desde otra cuenta de ProtonMail
 - Permite integrar PGP sin instalar nada adicional
 - Su código es abierto y ha sido auditado
 
-> 🔴 Filtrar sin protección ha costado vidas. Cifrar puede salvarlas.
+> 🔴 Compartir información sin protección ha costado vidas. Cifrar puede salvarlas.
 
 ## Casos reales: ¿por qué es urgente?
 
@@ -46,7 +47,7 @@ PGP es usado por medios como **Wikileaks**, **The Intercept** y organizaciones c
 
 ---
 
-## ¿Cómo puedes enviarme un correo cifrado?
+## ¿Cómo puedes enviarme información cifrada?
 
 ### 1. Instala GPG
 
@@ -93,13 +94,14 @@ No pasa nada. Si tienes ProtonMail, puedes escribirme directamente desde ahí. E
 
 ## ¿Qué tipo de información puedes enviarme?
 
-- Corrupción en instituciones públicas
-- Vínculos entre crimen organizado e inmobiliarias
-- Abusos de poder, violencia institucional o desapariciones
+- Investigaciones sobre corrupción en instituciones públicas
+- Evidencia de vínculos entre crimen organizado e inmobiliarias
+- Documentación de abusos de poder, violencia institucional o desapariciones
+- Cualquier información que consideres de interés público
 
-**Tu testimonio puede iniciar una investigación.**
+**Tu información puede iniciar una investigación. Tú decides si quieres crédito público, seudónimo o anonimato total.**
 
 📩 [Envíame tu información segura →](../../contact)
 
 ---
-**Protegerte es lo mínimo que puedo hacer si decides contarme la verdad.**
+**Protegerte es lo mínimo que puedo hacer si decides compartir información conmigo.**
