@@ -14,24 +14,7 @@ const series = await getAllSeries();
     title="Construyendo una red de investigadores"
     subtitle="Soy un investigador independiente que aplica técnicas de inteligencia de fuentes abiertas (OSINT) y periodismo de investigación. Mi objetivo es crear una red abierta donde cualquier persona pueda contribuir con investigaciones, filtraciones o evidencia, manteniendo su anonimato si así lo desea. Cada contribución se publica dando el crédito que el colaborador prefiera."
   />
-
-  <!-- ÚNETE A LA RED -->
-  <section class="home-container">
-    <h2>Únete a la Red de Investigadores</h2>
-    <p>
-      ¿Tienes habilidades en investigación digital, análisis de datos o verificación de hechos? Caballo Azteca es una <strong>red abierta de investigadores</strong> donde combino técnicas de inteligencia de fuentes abiertas (OSINT) con periodismo de investigación para exponer casos que las autoridades ignoran.
-      <br /><br />
-      Cualquier persona puede ser parte de Caballo Azteca. Si tienes una investigación, filtración o evidencia que consideras importante, puedes compartirla conmigo. Yo me encargo de verificar la información usando metodologías rigurosas, cruzar bases de datos públicas, analizar documentos y exponer patrones de corrupción que permanecen ocultos.
-      <br /><br />
-      Opero bajo principios de <strong>protección de fuentes y seguridad operacional</strong>. Las comunicaciones están cifradas, los servidores son seguros y las identidades de quienes contribuyen permanecen protegidas. Tú decides si quieres crédito público, seudónimo o anonimato total.
-      <br /><br />
-      No es una organización tradicional: es un <strong>movimiento abierto</strong> donde cualquier investigador puede contribuir con sus habilidades específicas. Juntos formamos una red resiliente donde cada voz cuenta y cada investigación importa.
-    </p>
-    <div class="home-buttons">
-      <a href="/contact" class="button-link">Filtrar información</a>
-      <a href="/carnet" class="button-link secondary">Unirse a la red</a>
-    </div>
-  </section>
+  
   <!-- SOBRE CABALLO AZTECA -->
   <section class="home-container">
     <p>
@@ -62,16 +45,6 @@ const series = await getAllSeries();
       </li>
     </ul>
   </section>
-
-  <!-- SERIES RECIENTES -->
-  <section class="home-container">
-    <h2>Series recientes</h2>
-    <Grid>
-      {series.slice(0, 3).map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
-    </Grid>
-  </section>
-
-
   <!-- SEGURIDAD Y TRANSPARENCIA -->
   <section class="home-container">
     <h2>Protección de Fuentes y Metodología Abierta</h2>
@@ -85,6 +58,13 @@ const series = await getAllSeries();
     </p>
   </section>
 
+  <!-- SERIES RECIENTES -->
+  <section class="home-container">
+    <h2>Series recientes</h2>
+    <Grid>
+      {series.slice(0, 3).map(s => <SeriesCard {...s} link={`/series/${s.slug}/`} />)}
+    </Grid>
+  </section>
   <style>
     .home-container {
       max-width: 800px;
