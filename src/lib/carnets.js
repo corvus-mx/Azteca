@@ -4,7 +4,7 @@ import carnetsData from './carnets.json' assert { type: 'json' };
 export const carnetsDatabase = new Map(Object.entries(carnetsData));
 
 export function isValidHashFormat(hash) {
-  const pattern = /^CA-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
+  const pattern = /^CA-(?:[A-Z0-9]{4}-){3}[A-Z0-9]{2,4}$/;
   return pattern.test(hash);
 }
 
