@@ -1,35 +1,23 @@
 // src/lib/carnets.js - Sistema escalable de carnets
 
 // Tipos de investigadores disponibles
-const TIPOS_INVESTIGADOR = [
-  'Investigador OSINT',
-  'Investigador Digital', 
-  'Analista de Datos',
-  'Especialista en Geolocalización',
-  'Verificador de Hechos',
-  'Analista Forense Digital',
-  'Investigador de Redes Sociales',
-  'Especialista en Criptografía',
-  'Analista Financiero',
-  'Investigador de Campo'
+const TIPOS_COLABORADOR = [
+  'Periodista',
+  'Fotógrafo',
+  'Videógrafo',
+  'Creador de Contenido / Influencer',
+  'Gestor de Redes Sociales',
+  'Colaborador / Ciudadano'
 ];
 
-const ESPECIALIDADES = [
-  'Análisis de redes sociales',
-  'Análisis forense de documentos',
-  'Correlación de bases de datos públicas',
-  'Verificación de ubicaciones',
-  'Fact-checking y fuentes abiertas',
-  'Análisis de metadatos',
-  'Investigación de blockchain',
-  'Análisis de tráfico web',
-  'Verificación de imágenes',
-  'Análisis de patrones financieros',
-  'Investigación en terreno',
-  'Análisis de comunicaciones',
-  'Verificación de identidades',
-  'Análisis de infraestructura digital'
+const AREAS_COLABORACION = [
+  'Envío de investigaciones o filtraciones',
+  'Aporte de evidencias digitales',
+  'Registro fotográfico o en video como evidencia',
+  'Difusión del movimiento en redes sociales',
+  'Participación como colaborador general'
 ];
+
 
 // Función para generar hash único
 function generateUniqueHash() {
